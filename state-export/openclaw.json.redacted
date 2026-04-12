@@ -215,7 +215,7 @@
   },
   "meta": {
     "lastTouchedVersion": "2026.4.10",
-    "lastTouchedAt": "2026-04-12T16:44:55.927Z"
+    "lastTouchedAt": "2026-04-12T19:33:58.333Z"
   },
   "plugins": {
     "entries": {
@@ -223,6 +223,9 @@
         "enabled": true
       },
       "lossless-claw": {
+        "enabled": true
+      },
+      "agentmail": {
         "enabled": true
       }
     },
@@ -239,13 +242,27 @@
         "shasum": "180feb93af222d9c00fb7038c96fad6232ac8d20",
         "resolvedAt": "2026-04-11T15:03:27.371Z",
         "installedAt": "2026-04-11T15:05:50.295Z"
+      },
+      "agentmail": {
+        "source": "npm",
+        "spec": "openclaw-agentmail",
+        "installPath": "/home/openclaw/.openclaw/extensions/agentmail",
+        "version": "1.1.0",
+        "resolvedName": "openclaw-agentmail",
+        "resolvedVersion": "1.1.0",
+        "resolvedSpec": "openclaw-agentmail@1.1.0",
+        "integrity": "sha512-RPGcbfFHlohpnKAfeGfFgggKwsj1v91uGjEUQ1GnypNTpcaL2DM4QHCfFZDDPU1yz69f6b5ucN1B47sQQCOVBQ==",
+        "shasum": "22237dbe9f759202b68beb9d14599088d48a79d7",
+        "resolvedAt": "2026-04-12T19:33:02.440Z",
+        "installedAt": "2026-04-12T19:33:53.566Z"
       }
     },
     "allow": [
       "lossless-claw",
       "telegram",
       "openai",
-      "memory-core"
+      "memory-core",
+      "agentmail"
     ]
   },
   "channels": {
