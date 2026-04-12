@@ -62,6 +62,29 @@ bash scripts/backup-release.sh
 bash scripts/restore-from-release.sh <release-tag>
 ```
 
+## Совместимость gateway после обновлений
+На этом сервере gateway запущен как системный `systemd` unit (`openclaw-gateway.service`), поэтому для OpenClaw установлен внешний shim:
+```bash
+bash scripts/install-openclaw-gateway-compat.sh
+```
+
+Он:
+- перенаправляет `systemctl --user ... openclaw-gateway.service` на системный unit
+- разрешает пользователю `openclaw` выполнять `start|stop|restart` только для `openclaw-gateway.service`
+- переживает обновления OpenClaw, потому что не зависит от `node_modules`
+
+Для будущих обновлений используй обертку:
+```bash
+bash scripts/update-openclaw-safe.sh
+```
+
+Она:
+- переустанавливает shim
+- запускает `openclaw update --yes`
+- проверяет `openclaw status --json`
+- прогоняет smoke test `openclaw gateway restart`
+- печатает хвост `journalctl -u openclaw-gateway.service`
+
 ## Важно
 - Секреты в git не коммитим
 - Конфиг в `state-export/openclaw.json.redacted` уже обезличен

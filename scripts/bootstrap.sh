@@ -21,5 +21,6 @@ git config user.email "assistant@openclaw.local"
 bash scripts/export-config.sh || true
 
 bash scripts/install-autosync.sh
+bash scripts/install-openclaw-gateway-compat.sh
 
 echo "bootstrap done"
