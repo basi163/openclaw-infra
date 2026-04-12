@@ -1,3 +1,4 @@
+[plugins] agentmail: registered tools (inbox: itvibe@agentmail.to)
 Agents:
 - main (default)
   Workspace: ~/.openclaw/workspace

@@ -1,19 +1,36 @@
 {
+  "meta": {
+    "lastTouchedVersion": "2026.4.10",
+    "lastTouchedAt": "2026-04-12T19:40:07.007Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-12T15:23:40.940Z",
+    "lastRunVersion": "2026.4.10",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "logging": {
+    "redactSensitive": "tools"
+  },
   "agents": {
     "defaults": {
-      "workspace": "/home/openclaw/.openclaw/workspace",
-      "memorySearch": {
-        "enabled": false
-      },
       "model": {
         "primary": "openai-codex/gpt-5.3-codex"
       },
       "models": {
         "openai-codex/gpt-5.3-codex": {}
       },
-      "thinkingDefault": "medium",
+      "workspace": "/home/openclaw/.openclaw/workspace",
+      "memorySearch": {
+        "enabled": false
+      },
       "compaction": {
         "mode": "safeguard"
+      },
+      "thinkingDefault": "medium",
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
       }
     },
     "list": [
@@ -156,50 +173,88 @@
       }
     ]
   },
-  "gateway": {
-    "mode": "local",
-    "auth": {
-      "mode": "token",
-      "token": "***REDACTED***"
-    },
-    "port": 18789,
-    "bind": "loopback",
-    "tailscale": {
-      "mode": "off",
-      "resetOnExit": false
-    },
-    "controlUi": {
-      "allowInsecureAuth": false,
-      "allowedOrigins": [
-        "http://194.154.29.191:3040"
-      ]
-    }
-  },
-  "session": {
-    "dmScope": "per-channel-peer"
-  },
   "tools": {
     "profile": "full",
     "web": {
       "search": {
         "enabled": true,
+        "provider": "searxng",
         "openaiCodex": {
           "enabled": true,
           "mode": "cached"
-        },
-        "provider": "searxng"
+        }
       },
       "fetch": {
         "enabled": true
       }
     },
     "exec": {
-      "security": "full",
       "host": "gateway",
+      "security": "full",
       "ask": "off"
     },
     "fs": {
       "workspaceOnly": true
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "boot-md": {
+          "enabled": true
+        },
+        "bootstrap-extra-files": {
+          "enabled": true
+        },
+        "command-logger": {
+          "enabled": true
+        },
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "groups": {
+        "*": {
+          "requireMention": true
+        }
+      },
+      "botToken": "***REDACTED***",
+      "dmPolicy": "pairing",
+      "groupPolicy": "allowlist"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "controlUi": {
+      "allowedOrigins": [
+        "http://194.154.29.191:3040"
+      ],
+      "allowInsecureAuth": false
+    },
+    "auth": {
+      "mode": "token",
+      "token": "***REDACTED***"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
     }
   },
   "skills": {
@@ -207,26 +262,43 @@
       "nodeManager": "npm"
     }
   },
-  "wizard": {
-    "lastRunAt": "2026-04-12T15:23:40.940Z",
-    "lastRunVersion": "2026.4.10",
-    "lastRunCommand": "doctor",
-    "lastRunMode": "local"
-  },
-  "meta": {
-    "lastTouchedVersion": "2026.4.10",
-    "lastTouchedAt": "2026-04-12T19:40:07.007Z"
-  },
   "plugins": {
+    "allow": [
+      "lossless-claw",
+      "telegram",
+      "openai",
+      "memory-core",
+      "agentmail"
+    ],
+    "load": {
+      "paths": [
+        "/tmp/agentmail-onfabric/package"
+      ]
+    },
     "entries": {
       "openai": {
-        "enabled": true
+        "enabled": true,
+        "config": {
+          "personality": "friendly"
+        }
       },
       "lossless-claw": {
-        "enabled": true
+        "enabled": true,
+        "config": {}
       },
       "agentmail": {
-        "enabled": true
+        "enabled": true,
+        "config": {
+          "apiKey": "***REDACTED***",
+          "inboxId": "itvibe@agentmail.to",
+          "emailAddress": "itvibe@agentmail.to"
+        }
+      },
+      "memory-core": {
+        "config": {}
+      },
+      "telegram": {
+        "config": {}
       }
     },
     "installs": {
@@ -250,51 +322,9 @@
         "version": "0.0.1",
         "installedAt": "2026-04-12T19:40:04.535Z"
       }
-    },
-    "allow": [
-      "lossless-claw",
-      "telegram",
-      "openai",
-      "memory-core",
-      "agentmail"
-    ],
-    "load": {
-      "paths": [
-        "/tmp/agentmail-onfabric/package"
-      ]
     }
   },
-  "channels": {
-    "telegram": {
-      "enabled": true,
-      "groups": {
-        "*": {
-          "requireMention": true
-        }
-      },
-      "botToken": "***REDACTED***"
-    }
-  },
-  "hooks": {
-    "internal": {
-      "enabled": true,
-      "entries": {
-        "boot-md": {
-          "enabled": true
-        },
-        "bootstrap-extra-files": {
-          "enabled": true
-        },
-        "command-logger": {
-          "enabled": true
-        },
-        "session-memory": {
-          "enabled": true
-        }
-      }
-    }
-  },
-  "logging": {
-    "redactSensitive": "tools"
+  "messages": {
+    "ackReactionScope": "group-mentions"
   }
 }
