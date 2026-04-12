@@ -169,7 +169,7 @@
       "resetOnExit": false
     },
     "controlUi": {
-      "allowInsecureAuth": true,
+      "allowInsecureAuth": false,
       "allowedOrigins": [
         "http://194.154.29.191:3040"
       ]
@@ -194,7 +194,10 @@
       }
     },
     "exec": {
-      "security": "full"
+      "security": "allowlist"
+    },
+    "fs": {
+      "workspaceOnly": true
     }
   },
   "skills": {
@@ -272,5 +275,9 @@
         }
       }
     }
+  },
+  "elevated": {},
+  "logging": {
+    "redactSensitive": "tools"
   }
 }
