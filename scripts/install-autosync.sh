@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 AUTO_SYNC_LOG="${AUTO_SYNC_LOG:-/tmp/openclaw-infra-autosync.log}"
 BACKUP_RELEASE_LOG="${BACKUP_RELEASE_LOG:-/tmp/openclaw-infra-backup-release.log}"
-AUTO_SYNC_SCHEDULE="${AUTO_SYNC_SCHEDULE:-*/5 * * * *}"
+AUTO_SYNC_SCHEDULE="${AUTO_SYNC_SCHEDULE:-0 * * * *}"
 BACKUP_RELEASE_SCHEDULE="${BACKUP_RELEASE_SCHEDULE:-35 3 * * *}"
 
 mkdir -p "$(dirname "$AUTO_SYNC_LOG")" "$(dirname "$BACKUP_RELEASE_LOG")"
