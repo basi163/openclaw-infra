@@ -1,1 +1,0 @@
-[plugins] agentmail: registered tools (inbox: itvibe@agentmail.to)
