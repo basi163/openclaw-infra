@@ -194,7 +194,9 @@
       }
     },
     "exec": {
-      "security": "allowlist"
+      "security": "full",
+      "host": "gateway",
+      "ask": "off"
     },
     "fs": {
       "workspaceOnly": true
@@ -213,7 +215,7 @@
   },
   "meta": {
     "lastTouchedVersion": "2026.4.10",
-    "lastTouchedAt": "2026-04-12T15:23:41.379Z"
+    "lastTouchedAt": "2026-04-12T16:44:55.927Z"
   },
   "plugins": {
     "entries": {
