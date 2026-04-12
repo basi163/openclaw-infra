@@ -215,7 +215,7 @@
   },
   "meta": {
     "lastTouchedVersion": "2026.4.10",
-    "lastTouchedAt": "2026-04-12T19:37:28.026Z"
+    "lastTouchedAt": "2026-04-12T19:40:07.007Z"
   },
   "plugins": {
     "entries": {
@@ -223,6 +223,9 @@
         "enabled": true
       },
       "lossless-claw": {
+        "enabled": true
+      },
+      "agentmail": {
         "enabled": true
       }
     },
@@ -239,14 +242,27 @@
         "shasum": "180feb93af222d9c00fb7038c96fad6232ac8d20",
         "resolvedAt": "2026-04-11T15:03:27.371Z",
         "installedAt": "2026-04-11T15:05:50.295Z"
+      },
+      "agentmail": {
+        "source": "path",
+        "sourcePath": "/tmp/agentmail-onfabric/package",
+        "installPath": "/tmp/agentmail-onfabric/package",
+        "version": "0.0.1",
+        "installedAt": "2026-04-12T19:40:04.535Z"
       }
     },
     "allow": [
       "lossless-claw",
       "telegram",
       "openai",
-      "memory-core"
-    ]
+      "memory-core",
+      "agentmail"
+    ],
+    "load": {
+      "paths": [
+        "/tmp/agentmail-onfabric/package"
+      ]
+    }
   },
   "channels": {
     "telegram": {
