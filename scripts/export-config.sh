@@ -11,7 +11,7 @@ OPENCLAW_JSON="$HOME/.openclaw/openclaw.json"
 python3 - <<'PY'
 import json, pathlib
 src = pathlib.Path.home()/'.openclaw'/'openclaw.json'
-out = pathlib.Path('/home/openclaw/.openclaw/workspace/openclaw-infra/state-export/openclaw.json.redacted')
+out = pathlib.Path.home()/'.openclaw'/'workspace'/'openclaw-infra'/'state-export'/'openclaw.json.redacted'
 obj = json.loads(src.read_text())
 SENSITIVE = {'token','secret','password','apiKey','api_key','clientSecret','accessToken','refreshToken'}
 
@@ -38,14 +38,19 @@ PY
 
 # 3) copy important config trees (without heavy runtime dirs)
 mkdir -p "$OUT/agency-agents" "$OUT/workspace"
-rsync -a --delete \
-  --exclude '.git/' \
-  --exclude 'node_modules/' \
-  --exclude '.next/' \
-  --exclude '.openclaw/' \
-  --exclude 'sessions/' \
-  --exclude 'memory/' \
-  "$HOME/.openclaw/agency-agents/" "$OUT/agency-agents/"
+if [ -d "$HOME/.openclaw/agency-agents" ]; then
+  rsync -a --delete \
+    --exclude '.git/' \
+    --exclude 'node_modules/' \
+    --exclude '.next/' \
+    --exclude '.openclaw/' \
+    --exclude 'sessions/' \
+    --exclude 'memory/' \
+    "$HOME/.openclaw/agency-agents/" "$OUT/agency-agents/"
+else
+  rm -rf "$OUT/agency-agents"
+  mkdir -p "$OUT/agency-agents"
+fi
 
 # optional workspace snapshots of infra projects only
 for p in assistant-dashboard openclaw-infra; do

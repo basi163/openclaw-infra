@@ -21,6 +21,25 @@ bash scripts/export-config.sh
 bash scripts/sync-to-github.sh
 ```
 
+## Автосинк
+Установка cron-задач:
+```bash
+bash scripts/install-autosync.sh
+```
+
+По умолчанию:
+- `auto-sync.sh` запускается при старте сервера и каждые 5 минут
+- `backup-release.sh` запускается ежедневно в `03:35 UTC`
+
+Опционально можно переопределить расписание и пути логов:
+```bash
+AUTO_SYNC_SCHEDULE='*/10 * * * *' \
+BACKUP_RELEASE_SCHEDULE='15 2 * * *' \
+AUTO_SYNC_LOG='/tmp/openclaw-autosync.log' \
+BACKUP_RELEASE_LOG='/tmp/openclaw-backup-release.log' \
+bash scripts/install-autosync.sh
+```
+
 ## Бэкап и проверка
 ```bash
 bash scripts/backup-create.sh
