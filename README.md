@@ -28,7 +28,22 @@ bash scripts/backup-create.sh
 openclaw backup create --output ~/openclaw-backups --verify
 ```
 
+## Encrypted backup в GitHub Releases
+1) Создай файл `~/.openclaw/.backup-release.env`:
+```bash
+OPENCLAW_BACKUP_PASSPHRASE='длинный-секретный-пароль'
+GITHUB_BACKUP_REPO='basi163/openclaw-infra'
+```
+2) Запуск вручную:
+```bash
+bash scripts/backup-release.sh
+```
+3) Восстановление:
+```bash
+bash scripts/restore-from-release.sh <release-tag>
+```
+
 ## Важно
-- Репозиторий приватный по умолчанию
-- Секреты редактируются (redact) перед коммитом
-- Для полного аварийного восстановления используй также backup archive
+- Секреты в git не коммитим
+- Конфиг в `state-export/openclaw.json.redacted` уже обезличен
+- Для полного аварийного восстановления используй encrypted backup archive из Releases
