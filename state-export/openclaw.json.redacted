@@ -274,6 +274,11 @@
         }
       },
       "botToken": "***REDACTED***"
+    },
+    "agentmail": {
+      "enabled": true,
+      "token": "***REDACTED***",
+      "emailAddress": "itvibe@agentmail.to"
     }
   },
   "hooks": {
