@@ -169,7 +169,10 @@
       "resetOnExit": false
     },
     "controlUi": {
-      "allowInsecureAuth": true
+      "allowInsecureAuth": true,
+      "allowedOrigins": [
+        "http://194.154.29.191:3040"
+      ]
     }
   },
   "session": {
