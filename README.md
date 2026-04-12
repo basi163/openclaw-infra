@@ -71,6 +71,7 @@ bash scripts/install-openclaw-gateway-compat.sh
 Он:
 - перенаправляет `systemctl --user ... openclaw-gateway.service` на системный unit
 - разрешает пользователю `openclaw` выполнять `start|stop|restart` только для `openclaw-gateway.service`
+- создает `~openclaw/.config/systemd/user/openclaw-gateway.service` как symlink на системный unit, чтобы новые версии OpenClaw корректно считали сервис установленным
 - переживает обновления OpenClaw, потому что не зависит от `node_modules`
 
 Для будущих обновлений используй обертку:

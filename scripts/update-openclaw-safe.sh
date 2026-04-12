@@ -3,6 +3,9 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 OPENCLAW_BIN="${OPENCLAW_BIN:-/home/linuxbrew/.linuxbrew/bin/openclaw}"
+OPENCLAW_HOME="${OPENCLAW_HOME:-/home/openclaw}"
+OPENCLAW_NPM_SPEC="${OPENCLAW_NPM_SPEC:-openclaw@latest}"
+OPENCLAW_NPM_PREFIX="${OPENCLAW_NPM_PREFIX:-/home/linuxbrew/.linuxbrew}"
 STATUS_TMP="$(mktemp)"
 trap 'rm -f "$STATUS_TMP"' EXIT
 
@@ -11,22 +14,29 @@ if [[ ${EUID} -ne 0 ]]; then
   exit 1
 fi
 
+bash "$ROOT/scripts/install-openclaw-gateway-compat.sh"
+
+before_version="$(
+  sudo -u openclaw -H bash -lc "cd '$OPENCLAW_HOME' && '$OPENCLAW_BIN' --version" 2>/dev/null | tr -d '\r' || true
+)"
+if [[ -z "$before_version" ]]; then
+  before_version="unavailable"
+fi
+echo "Before update: $before_version"
+
+echo "Installing $OPENCLAW_NPM_SPEC into $OPENCLAW_NPM_PREFIX ..."
+npm install -g "$OPENCLAW_NPM_SPEC" --prefix "$OPENCLAW_NPM_PREFIX" --force
+bash "$ROOT/scripts/install-openclaw-gateway-compat.sh"
+
 if [[ ! -x "$OPENCLAW_BIN" ]]; then
-  echo "Missing OpenClaw binary: $OPENCLAW_BIN"
+  echo "OpenClaw binary is still missing after reinstall: $OPENCLAW_BIN"
   exit 1
 fi
 
-bash "$ROOT/scripts/install-openclaw-gateway-compat.sh"
-
-before_version="$(sudo -u openclaw -H bash -lc "$OPENCLAW_BIN --version" | tr -d '\r')"
-echo "Before update: $before_version"
-
-"$OPENCLAW_BIN" update --yes "$@"
-
-after_version="$(sudo -u openclaw -H bash -lc "$OPENCLAW_BIN --version" | tr -d '\r')"
+after_version="$(sudo -u openclaw -H bash -lc "cd '$OPENCLAW_HOME' && '$OPENCLAW_BIN' --version" | tr -d '\r')"
 echo "After update: $after_version"
 
-sudo -u openclaw -H bash -lc "$OPENCLAW_BIN status --json" >"$STATUS_TMP"
+sudo -u openclaw -H bash -lc "cd '$OPENCLAW_HOME' && '$OPENCLAW_BIN' status --json" >"$STATUS_TMP"
 
 before_pid="$(
 node -e '
@@ -44,7 +54,7 @@ process.stdout.write(String(runtime.pid ?? ""));
 ' "$STATUS_TMP"
 )"
 
-restart_output="$(sudo -u openclaw -H bash -lc "$OPENCLAW_BIN gateway restart" | tr -d '\r')"
+restart_output="$(sudo -u openclaw -H bash -lc "cd '$OPENCLAW_HOME' && '$OPENCLAW_BIN' gateway restart" | tr -d '\r')"
 echo "$restart_output"
 
 if ! grep -Eq 'restarted|restart scheduled' <<<"$restart_output"; then
@@ -53,7 +63,7 @@ if ! grep -Eq 'restarted|restart scheduled' <<<"$restart_output"; then
 fi
 
 sleep 3
-sudo -u openclaw -H bash -lc "$OPENCLAW_BIN status --json" >"$STATUS_TMP"
+sudo -u openclaw -H bash -lc "cd '$OPENCLAW_HOME' && '$OPENCLAW_BIN' status --json" >"$STATUS_TMP"
 
 after_pid="$(
 node -e '
