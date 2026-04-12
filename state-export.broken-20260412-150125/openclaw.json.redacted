@@ -1,0 +1,273 @@
+{
+  "agents": {
+    "defaults": {
+      "workspace": "/home/openclaw/.openclaw/workspace",
+      "memorySearch": {
+        "enabled": false
+      },
+      "model": {
+        "primary": "openai-codex/gpt-5.3-codex"
+      },
+      "models": {
+        "openai-codex/gpt-5.3-codex": {}
+      },
+      "thinkingDefault": "medium",
+      "compaction": {
+        "mode": "safeguard"
+      }
+    },
+    "list": [
+      {
+        "id": "main"
+      },
+      {
+        "id": "ai-citation-strategist",
+        "name": "ai-citation-strategist",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/ai-citation-strategist",
+        "agentDir": "/home/openclaw/.openclaw/agents/ai-citation-strategist/agent"
+      },
+      {
+        "id": "wechat-mini-program-developer",
+        "name": "wechat-mini-program-developer",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/wechat-mini-program-developer",
+        "agentDir": "/home/openclaw/.openclaw/agents/wechat-mini-program-developer/agent"
+      },
+      {
+        "id": "wechat-official-account-manager",
+        "name": "wechat-official-account-manager",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/wechat-official-account-manager",
+        "agentDir": "/home/openclaw/.openclaw/agents/wechat-official-account-manager/agent"
+      },
+      {
+        "id": "book-co-author",
+        "name": "book-co-author",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/book-co-author",
+        "agentDir": "/home/openclaw/.openclaw/agents/book-co-author/agent"
+      },
+      {
+        "id": "sales-coach",
+        "name": "sales-coach",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/sales-coach",
+        "agentDir": "/home/openclaw/.openclaw/agents/sales-coach/agent"
+      },
+      {
+        "id": "study-abroad-advisor",
+        "name": "study-abroad-advisor",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/study-abroad-advisor",
+        "agentDir": "/home/openclaw/.openclaw/agents/study-abroad-advisor/agent"
+      },
+      {
+        "id": "legal-client-intake",
+        "name": "legal-client-intake",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/legal-client-intake",
+        "agentDir": "/home/openclaw/.openclaw/agents/legal-client-intake/agent"
+      },
+      {
+        "id": "data-engineer",
+        "name": "data-engineer",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/data-engineer",
+        "agentDir": "/home/openclaw/.openclaw/agents/data-engineer/agent"
+      },
+      {
+        "id": "ux-researcher",
+        "name": "ux-researcher",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/ux-researcher",
+        "agentDir": "/home/openclaw/.openclaw/agents/ux-researcher/agent"
+      },
+      {
+        "id": "filament-optimization-specialist",
+        "name": "filament-optimization-specialist",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/filament-optimization-specialist",
+        "agentDir": "/home/openclaw/.openclaw/agents/filament-optimization-specialist/agent"
+      },
+      {
+        "id": "china-e-commerce-operator",
+        "name": "china-e-commerce-operator",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/china-e-commerce-operator",
+        "agentDir": "/home/openclaw/.openclaw/agents/china-e-commerce-operator/agent"
+      },
+      {
+        "id": "hr-onboarding",
+        "name": "hr-onboarding",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/hr-onboarding",
+        "agentDir": "/home/openclaw/.openclaw/agents/hr-onboarding/agent"
+      },
+      {
+        "id": "model-qa-specialist",
+        "name": "model-qa-specialist",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/model-qa-specialist",
+        "agentDir": "/home/openclaw/.openclaw/agents/model-qa-specialist/agent"
+      },
+      {
+        "id": "paid-social-strategist",
+        "name": "paid-social-strategist",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/paid-social-strategist",
+        "agentDir": "/home/openclaw/.openclaw/agents/paid-social-strategist/agent"
+      },
+      {
+        "id": "private-domain-operator",
+        "name": "private-domain-operator",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/private-domain-operator",
+        "agentDir": "/home/openclaw/.openclaw/agents/private-domain-operator/agent"
+      },
+      {
+        "id": "product-manager",
+        "name": "product-manager",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/product-manager",
+        "agentDir": "/home/openclaw/.openclaw/agents/product-manager/agent"
+      },
+      {
+        "id": "anthropologist",
+        "name": "anthropologist",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/anthropologist",
+        "agentDir": "/home/openclaw/.openclaw/agents/anthropologist/agent"
+      },
+      {
+        "id": "sre-site-reliability-engineer",
+        "name": "sre-site-reliability-engineer",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/sre-site-reliability-engineer",
+        "agentDir": "/home/openclaw/.openclaw/agents/sre-site-reliability-engineer/agent"
+      },
+      {
+        "id": "mobile-app-builder",
+        "name": "mobile-app-builder",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/mobile-app-builder",
+        "agentDir": "/home/openclaw/.openclaw/agents/mobile-app-builder/agent"
+      },
+      {
+        "id": "flightwatch",
+        "name": "flightwatch",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/flightwatch",
+        "agentDir": "/home/openclaw/.openclaw/agents/flightwatch/agent"
+      },
+      {
+        "id": "watercooler",
+        "name": "watercooler",
+        "workspace": "/home/openclaw/agents/watercooler",
+        "agentDir": "/home/openclaw/.openclaw/agents/watercooler/agent",
+        "model": "openai-codex/gpt-5.3-codex"
+      },
+      {
+        "id": "developer",
+        "name": "developer",
+        "workspace": "/home/openclaw/.openclaw/agency-agents/developer",
+        "agentDir": "/home/openclaw/.openclaw/agents/developer/agent",
+        "model": "openai-codex/gpt-5.3-codex"
+      }
+    ]
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "***REDACTED***"
+    },
+    "port": 18789,
+    "bind": "loopback",
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "controlUi": {
+      "allowInsecureAuth": true
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "tools": {
+    "profile": "full",
+    "web": {
+      "search": {
+        "enabled": true,
+        "openaiCodex": {
+          "enabled": true,
+          "mode": "cached"
+        },
+        "provider": "searxng"
+      },
+      "fetch": {
+        "enabled": true
+      }
+    },
+    "exec": {
+      "security": "full"
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-11T14:06:14.521Z",
+    "lastRunVersion": "2026.4.10",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.4.10",
+    "lastTouchedAt": "2026-04-12T10:31:00.465Z"
+  },
+  "plugins": {
+    "entries": {
+      "openai": {
+        "enabled": true
+      },
+      "lossless-claw": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "lossless-claw": {
+        "source": "npm",
+        "spec": "@martian-engineering/lossless-claw",
+        "installPath": "/home/openclaw/.openclaw/extensions/lossless-claw",
+        "version": "0.8.0",
+        "resolvedName": "@martian-engineering/lossless-claw",
+        "resolvedVersion": "0.8.0",
+        "resolvedSpec": "@martian-engineering/lossless-claw@0.8.0",
+        "integrity": "sha512-wOOYD0XgmFGC/PyD8GGUPF7Q6le4mmuI90qcHIdv0qHsT1gJjlgWw+MOtSK5y9HEGAU6M7Abqhd21Fx5xe8L5A==",
+        "shasum": "180feb93af222d9c00fb7038c96fad6232ac8d20",
+        "resolvedAt": "2026-04-11T15:03:27.371Z",
+        "installedAt": "2026-04-11T15:05:50.295Z"
+      }
+    },
+    "allow": [
+      "lossless-claw",
+      "telegram",
+      "openai",
+      "memory-core"
+    ]
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "groups": {
+        "*": {
+          "requireMention": true
+        }
+      },
+      "botToken": "***REDACTED***"
+    }
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "boot-md": {
+          "enabled": true
+        },
+        "bootstrap-extra-files": {
+          "enabled": true
+        },
+        "command-logger": {
+          "enabled": true
+        },
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  }
+}

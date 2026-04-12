@@ -1,0 +1,9 @@
+# generated
+state-export/
+backups/
+*.tar.gz
+*.log
+
+# safety
+.env
+secrets/
