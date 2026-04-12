@@ -20,19 +20,41 @@ if [[ -z "${OPENCLAW_BACKUP_PASSPHRASE:-}" ]]; then
   echo "OPENCLAW_BACKUP_PASSPHRASE is not set. Put it in ~/.openclaw/.backup-release.env"
   exit 1
 fi
+export OPENCLAW_BACKUP_PASSPHRASE
 
 mkdir -p "$OUT_DIR"
 
-RAW_JSON="$($OPENCLAW_BIN backup create --output "$OUT_DIR" --verify --json)"
-ARCHIVE_PATH="$(python3 - <<'PY'
-import json,sys
-obj=json.loads(sys.stdin.read())
-print(obj.get('archivePath',''))
+RAW_OUT="$($OPENCLAW_BIN backup create --output "$OUT_DIR" --verify --json 2>&1 || true)"
+ARCHIVE_PATH="$(RAW="$RAW_OUT" python3 - <<'PY'
+import json, os, re
+raw = os.environ.get('RAW', '').strip()
+if not raw:
+    print('')
+    raise SystemExit
+
+try:
+    obj = json.loads(raw)
+    print(obj.get('archivePath', ''))
+    raise SystemExit
+except Exception:
+    pass
+
+m = re.search(r'\{.*\}', raw, re.S)
+if m:
+    try:
+        obj = json.loads(m.group(0))
+        print(obj.get('archivePath', ''))
+        raise SystemExit
+    except Exception:
+        pass
+
+print('')
 PY
-<<< "$RAW_JSON")"
+)"
 
 if [[ -z "$ARCHIVE_PATH" || ! -f "$ARCHIVE_PATH" ]]; then
   echo "Backup archive not found"
+  echo "$RAW_OUT"
   exit 1
 fi
 
