@@ -206,14 +206,14 @@
     }
   },
   "wizard": {
-    "lastRunAt": "2026-04-11T14:06:14.521Z",
+    "lastRunAt": "2026-04-12T15:23:40.940Z",
     "lastRunVersion": "2026.4.10",
-    "lastRunCommand": "configure",
+    "lastRunCommand": "doctor",
     "lastRunMode": "local"
   },
   "meta": {
     "lastTouchedVersion": "2026.4.10",
-    "lastTouchedAt": "2026-04-12T10:31:00.465Z"
+    "lastTouchedAt": "2026-04-12T15:23:41.379Z"
   },
   "plugins": {
     "entries": {
@@ -276,7 +276,6 @@
       }
     }
   },
-  "elevated": {},
   "logging": {
     "redactSensitive": "tools"
   }
