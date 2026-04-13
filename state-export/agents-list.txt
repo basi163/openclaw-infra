@@ -30,25 +30,5 @@ Agents:
   Agent dir: ~/.openclaw/agents/developer/agent
   Model: openai-codex/gpt-5.3-codex
   Routing rules: 0
-- sales-pipeline-manager
-  Workspace: ~/.openclaw/agency-agents/sales-pipeline-manager
-  Agent dir: ~/.openclaw/agents/sales-pipeline-manager/agent
-  Model: openai-codex/gpt-5.3-codex
-  Routing rules: 0
-- content-strategist
-  Workspace: ~/.openclaw/agency-agents/content-strategist
-  Agent dir: ~/.openclaw/agents/content-strategist/agent
-  Model: openai-codex/gpt-5.3-codex
-  Routing rules: 0
-- outreach-copilot
-  Workspace: ~/.openclaw/agency-agents/outreach-copilot
-  Agent dir: ~/.openclaw/agents/outreach-copilot/agent
-  Model: openai-codex/gpt-5.3-codex
-  Routing rules: 0
-- ai-automation-architect
-  Workspace: ~/.openclaw/agency-agents/ai-automation-architect
-  Agent dir: ~/.openclaw/agents/ai-automation-architect/agent
-  Model: openai-codex/gpt-5.3-codex
-  Routing rules: 0
 Routing rules map channel/account/peer to an agent. Use --bindings for full rules.
 Channel status reflects local config/creds. For live health: openclaw channels status --probe.

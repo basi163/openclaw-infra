@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.12",
-    "lastTouchedAt": "2026-04-13T20:49:51.078Z"
+    "lastTouchedAt": "2026-04-13T20:51:53.330Z"
   },
   "wizard": {
     "lastRunAt": "2026-04-13T20:23:32.001Z",
@@ -61,34 +61,6 @@
         "name": "developer",
         "workspace": "/home/openclaw/.openclaw/agency-agents/developer",
         "agentDir": "/home/openclaw/.openclaw/agents/developer/agent",
-        "model": "openai-codex/gpt-5.3-codex"
-      },
-      {
-        "id": "sales-pipeline-manager",
-        "name": "sales-pipeline-manager",
-        "workspace": "/home/openclaw/.openclaw/agency-agents/sales-pipeline-manager",
-        "agentDir": "/home/openclaw/.openclaw/agents/sales-pipeline-manager/agent",
-        "model": "openai-codex/gpt-5.3-codex"
-      },
-      {
-        "id": "content-strategist",
-        "name": "content-strategist",
-        "workspace": "/home/openclaw/.openclaw/agency-agents/content-strategist",
-        "agentDir": "/home/openclaw/.openclaw/agents/content-strategist/agent",
-        "model": "openai-codex/gpt-5.3-codex"
-      },
-      {
-        "id": "outreach-copilot",
-        "name": "outreach-copilot",
-        "workspace": "/home/openclaw/.openclaw/agency-agents/outreach-copilot",
-        "agentDir": "/home/openclaw/.openclaw/agents/outreach-copilot/agent",
-        "model": "openai-codex/gpt-5.3-codex"
-      },
-      {
-        "id": "ai-automation-architect",
-        "name": "ai-automation-architect",
-        "workspace": "/home/openclaw/.openclaw/agency-agents/ai-automation-architect",
-        "agentDir": "/home/openclaw/.openclaw/agents/ai-automation-architect/agent",
         "model": "openai-codex/gpt-5.3-codex"
       }
     ]
