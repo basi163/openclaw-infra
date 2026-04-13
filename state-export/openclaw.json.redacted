@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.12",
-    "lastTouchedAt": "2026-04-13T20:23:32.409Z"
+    "lastTouchedAt": "2026-04-13T20:37:17.510Z"
   },
   "wizard": {
     "lastRunAt": "2026-04-13T20:23:32.001Z",
@@ -235,7 +235,17 @@
       },
       "botToken": "***REDACTED***",
       "dmPolicy": "pairing",
-      "groupPolicy": "allowlist"
+      "groupPolicy": "allowlist",
+      "allowFrom": [
+        "368889"
+      ],
+      "execApprovals": {
+        "enabled": true,
+        "target": "dm",
+        "approvers": [
+          "368889"
+        ]
+      }
     }
   },
   "gateway": {
