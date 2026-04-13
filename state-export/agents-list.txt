@@ -31,17 +31,5 @@ Agents:
   Agent dir: ~/.openclaw/agents/developer/agent
   Model: openai-codex/gpt-5.3-codex
   Routing rules: 0
-- sales_agent
-  Identity: 💼 Sales (IDENTITY.md)
-  Workspace: ~/.openclaw/workspace-sales_agent
-  Agent dir: ~/.openclaw/agents/sales_agent/agent
-  Model: openai-codex/gpt-5.3-codex
-  Routing rules: 0
-- marketing_agent
-  Identity: 📣 Marketing (IDENTITY.md)
-  Workspace: ~/.openclaw/workspace-marketing_agent
-  Agent dir: ~/.openclaw/agents/marketing_agent/agent
-  Model: openai-codex/gpt-5.3-codex
-  Routing rules: 0
 Routing rules map channel/account/peer to an agent. Use --bindings for full rules.
 Channel status reflects local config/creds. For live health: openclaw channels status --probe.
