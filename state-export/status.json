@@ -1,0 +1,1115 @@
+{
+  "runtimeVersion": "2026.4.12",
+  "heartbeat": {
+    "defaultAgentId": "main",
+    "agents": [
+      {
+        "agentId": "main",
+        "enabled": true,
+        "every": "30m",
+        "everyMs": 1800000
+      },
+      {
+        "agentId": "ai-citation-strategist",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "anthropologist",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "book-co-author",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "china-e-commerce-operator",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "data-engineer",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "developer",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "filament-optimization-specialist",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "flightwatch",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "hr-onboarding",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "legal-client-intake",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "mobile-app-builder",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "model-qa-specialist",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "paid-social-strategist",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "private-domain-operator",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "product-manager",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "sales-coach",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "sre-site-reliability-engineer",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "study-abroad-advisor",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "ux-researcher",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "watercooler",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "wechat-mini-program-developer",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      },
+      {
+        "agentId": "wechat-official-account-manager",
+        "enabled": false,
+        "every": "disabled",
+        "everyMs": null
+      }
+    ]
+  },
+  "channelSummary": [
+    "Telegram: configured",
+    "  - default (token:config)"
+  ],
+  "queuedSystemEvents": [],
+  "tasks": {
+    "total": 166,
+    "active": 1,
+    "terminal": 165,
+    "failures": 75,
+    "byStatus": {
+      "queued": 0,
+      "running": 1,
+      "succeeded": 90,
+      "failed": 75,
+      "timed_out": 0,
+      "cancelled": 0,
+      "lost": 0
+    },
+    "byRuntime": {
+      "subagent": 0,
+      "acp": 0,
+      "cli": 165,
+      "cron": 1
+    }
+  },
+  "taskAudit": {
+    "total": 2,
+    "warnings": 1,
+    "errors": 1,
+    "byCode": {
+      "stale_queued": 0,
+      "stale_running": 1,
+      "lost": 0,
+      "delivery_failed": 0,
+      "missing_cleanup": 0,
+      "inconsistent_timestamps": 1
+    }
+  },
+  "sessions": {
+    "paths": [
+      "/home/openclaw/.openclaw/agents/main/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/ai-citation-strategist/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/anthropologist/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/book-co-author/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/china-e-commerce-operator/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/data-engineer/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/developer/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/filament-optimization-specialist/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/flightwatch/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/hr-onboarding/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/legal-client-intake/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/mobile-app-builder/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/model-qa-specialist/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/paid-social-strategist/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/private-domain-operator/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/product-manager/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/sales-coach/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/sre-site-reliability-engineer/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/study-abroad-advisor/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/ux-researcher/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/watercooler/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/wechat-mini-program-developer/sessions/sessions.json",
+      "/home/openclaw/.openclaw/agents/wechat-official-account-manager/sessions/sessions.json"
+    ],
+    "count": 11,
+    "defaults": {
+      "model": "gpt-5.3-codex",
+      "contextTokens": 200000
+    },
+    "recent": [
+      {
+        "agentId": "main",
+        "key": "agent:main:telegram:direct:368889",
+        "kind": "direct",
+        "sessionId": "682c212b-8d7d-4d88-8284-4a4c03faece1",
+        "updatedAt": 1776091066832,
+        "age": 319782,
+        "systemSent": true,
+        "abortedLastRun": false,
+        "inputTokens": 50644,
+        "outputTokens": 6,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "totalTokens": 50644,
+        "totalTokensFresh": true,
+        "remainingTokens": 149356,
+        "percentUsed": 25,
+        "model": "gpt-5.3-codex",
+        "contextTokens": 200000,
+        "flags": [
+          "system",
+          "id:682c212b-8d7d-4d88-8284-4a4c03faece1"
+        ]
+      },
+      {
+        "agentId": "main",
+        "key": "agent:main:main",
+        "kind": "direct",
+        "sessionId": "ae631fef-72c7-467e-87fc-51cf4abd5ccc",
+        "updatedAt": 1776090079186,
+        "age": 1307428,
+        "systemSent": true,
+        "abortedLastRun": false,
+        "inputTokens": 452,
+        "outputTokens": 123,
+        "cacheRead": 38656,
+        "cacheWrite": 0,
+        "totalTokens": 38937,
+        "totalTokensFresh": true,
+        "remainingTokens": 161063,
+        "percentUsed": 19,
+        "model": "gpt-5.3-codex",
+        "contextTokens": 200000,
+        "flags": [
+          "system",
+          "id:ae631fef-72c7-467e-87fc-51cf4abd5ccc"
+        ]
+      },
+      {
+        "agentId": "main",
+        "key": "agent:main:cron:21d90ec1-3c95-40ae-a707-1909145769f5",
+        "kind": "direct",
+        "sessionId": "f9528e0a-8a9a-401a-9d99-17a85b4faa12",
+        "updatedAt": 1776079949746,
+        "age": 11436868,
+        "systemSent": true,
+        "abortedLastRun": false,
+        "inputTokens": 39359,
+        "outputTokens": 146,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "totalTokens": 39359,
+        "totalTokensFresh": true,
+        "remainingTokens": 160641,
+        "percentUsed": 20,
+        "model": "gpt-5.3-codex",
+        "contextTokens": 200000,
+        "flags": [
+          "system",
+          "id:f9528e0a-8a9a-401a-9d99-17a85b4faa12"
+        ]
+      },
+      {
+        "agentId": "main",
+        "key": "agent:main:cron:21d90ec1-3c95-40ae-a707-1909145769f5:run:f9528e0a-8a9a-401a-9d99-17a85b4faa12",
+        "kind": "direct",
+        "sessionId": "f9528e0a-8a9a-401a-9d99-17a85b4faa12",
+        "updatedAt": 1776079697185,
+        "age": 11689429,
+        "systemSent": true,
+        "inputTokens": 54746,
+        "outputTokens": 8315,
+        "cacheRead": 529408,
+        "cacheWrite": 0,
+        "totalTokens": 55940,
+        "totalTokensFresh": true,
+        "remainingTokens": 144060,
+        "percentUsed": 28,
+        "model": "gpt-5.3-codex",
+        "contextTokens": 200000,
+        "flags": [
+          "system",
+          "id:f9528e0a-8a9a-401a-9d99-17a85b4faa12"
+        ]
+      },
+      {
+        "agentId": "main",
+        "key": "agent:main:telegram:group:-1003981159193:topic:4",
+        "kind": "group",
+        "sessionId": "0768cb47-e5a3-4039-93a6-1525e7e53908",
+        "updatedAt": 1776005475907,
+        "age": 85910707,
+        "totalTokens": null,
+        "totalTokensFresh": false,
+        "remainingTokens": null,
+        "percentUsed": null,
+        "model": "gpt-5.3-codex",
+        "contextTokens": 200000,
+        "flags": [
+          "id:0768cb47-e5a3-4039-93a6-1525e7e53908"
+        ]
+      },
+      {
+        "agentId": "main",
+        "key": "agent:main:telegram:group:-1003981159193:topic:3",
+        "kind": "group",
+        "sessionId": "596c1d66-5e30-41b3-9d31-ac81d0702cee",
+        "updatedAt": 1776005475883,
+        "age": 85910731,
+        "totalTokens": null,
+        "totalTokensFresh": false,
+        "remainingTokens": null,
+        "percentUsed": null,
+        "model": "gpt-5.3-codex",
+        "contextTokens": 200000,
+        "flags": [
+          "id:596c1d66-5e30-41b3-9d31-ac81d0702cee"
+        ]
+      },
+      {
+        "agentId": "main",
+        "key": "agent:main:telegram:group:-1003981159193:topic:5",
+        "kind": "group",
+        "sessionId": "2cd50fc0-51cf-4725-bdbd-c33271e01e2f",
+        "updatedAt": 1776005475857,
+        "age": 85910757,
+        "totalTokens": null,
+        "totalTokensFresh": false,
+        "remainingTokens": null,
+        "percentUsed": null,
+        "model": "gpt-5.3-codex",
+        "contextTokens": 200000,
+        "flags": [
+          "id:2cd50fc0-51cf-4725-bdbd-c33271e01e2f"
+        ]
+      },
+      {
+        "agentId": "main",
+        "key": "agent:main:telegram:group:-1003981159193:topic:2",
+        "kind": "group",
+        "sessionId": "dbd2491c-5b0e-4312-898c-806d0b6b1b91",
+        "updatedAt": 1776005475826,
+        "age": 85910788,
+        "totalTokens": null,
+        "totalTokensFresh": false,
+        "remainingTokens": null,
+        "percentUsed": null,
+        "model": "gpt-5.3-codex",
+        "contextTokens": 200000,
+        "flags": [
+          "id:dbd2491c-5b0e-4312-898c-806d0b6b1b91"
+        ]
+      },
+      {
+        "agentId": "watercooler",
+        "key": "agent:watercooler:main",
+        "kind": "direct",
+        "sessionId": "24253ba7-69f9-41ae-b7cf-b3b6443dadfd",
+        "updatedAt": 1776002407098,
+        "age": 88979516,
+        "thinkingLevel": "off",
+        "abortedLastRun": false,
+        "inputTokens": 1528,
+        "outputTokens": 32,
+        "cacheRead": 89984,
+        "cacheWrite": 0,
+        "totalTokens": 91512,
+        "totalTokensFresh": true,
+        "remainingTokens": 108488,
+        "percentUsed": 46,
+        "model": "gpt-5.3-codex",
+        "contextTokens": 200000,
+        "flags": [
+          "think:off",
+          "id:24253ba7-69f9-41ae-b7cf-b3b6443dadfd"
+        ]
+      },
+      {
+        "agentId": "flightwatch",
+        "key": "agent:flightwatch:main",
+        "kind": "direct",
+        "sessionId": "7ff4a5b5-cd32-4cbb-a023-c38d4e736e34",
+        "updatedAt": 1775930884606,
+        "age": 160502008,
+        "abortedLastRun": false,
+        "inputTokens": 350,
+        "outputTokens": 156,
+        "cacheRead": 19456,
+        "cacheWrite": 0,
+        "totalTokens": 19806,
+        "totalTokensFresh": true,
+        "remainingTokens": 180194,
+        "percentUsed": 10,
+        "model": "gpt-5.3-codex",
+        "contextTokens": 200000,
+        "flags": [
+          "id:7ff4a5b5-cd32-4cbb-a023-c38d4e736e34"
+        ]
+      }
+    ],
+    "byAgent": [
+      {
+        "agentId": "main",
+        "path": "/home/openclaw/.openclaw/agents/main/sessions/sessions.json",
+        "count": 8,
+        "recent": [
+          {
+            "agentId": "main",
+            "key": "agent:main:telegram:direct:368889",
+            "kind": "direct",
+            "sessionId": "682c212b-8d7d-4d88-8284-4a4c03faece1",
+            "updatedAt": 1776091066832,
+            "age": 319782,
+            "systemSent": true,
+            "abortedLastRun": false,
+            "inputTokens": 50644,
+            "outputTokens": 6,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "totalTokens": 50644,
+            "totalTokensFresh": true,
+            "remainingTokens": 149356,
+            "percentUsed": 25,
+            "model": "gpt-5.3-codex",
+            "contextTokens": 200000,
+            "flags": [
+              "system",
+              "id:682c212b-8d7d-4d88-8284-4a4c03faece1"
+            ]
+          },
+          {
+            "agentId": "main",
+            "key": "agent:main:main",
+            "kind": "direct",
+            "sessionId": "ae631fef-72c7-467e-87fc-51cf4abd5ccc",
+            "updatedAt": 1776090079186,
+            "age": 1307428,
+            "systemSent": true,
+            "abortedLastRun": false,
+            "inputTokens": 452,
+            "outputTokens": 123,
+            "cacheRead": 38656,
+            "cacheWrite": 0,
+            "totalTokens": 38937,
+            "totalTokensFresh": true,
+            "remainingTokens": 161063,
+            "percentUsed": 19,
+            "model": "gpt-5.3-codex",
+            "contextTokens": 200000,
+            "flags": [
+              "system",
+              "id:ae631fef-72c7-467e-87fc-51cf4abd5ccc"
+            ]
+          },
+          {
+            "agentId": "main",
+            "key": "agent:main:cron:21d90ec1-3c95-40ae-a707-1909145769f5",
+            "kind": "direct",
+            "sessionId": "f9528e0a-8a9a-401a-9d99-17a85b4faa12",
+            "updatedAt": 1776079949746,
+            "age": 11436868,
+            "systemSent": true,
+            "abortedLastRun": false,
+            "inputTokens": 39359,
+            "outputTokens": 146,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "totalTokens": 39359,
+            "totalTokensFresh": true,
+            "remainingTokens": 160641,
+            "percentUsed": 20,
+            "model": "gpt-5.3-codex",
+            "contextTokens": 200000,
+            "flags": [
+              "system",
+              "id:f9528e0a-8a9a-401a-9d99-17a85b4faa12"
+            ]
+          },
+          {
+            "agentId": "main",
+            "key": "agent:main:cron:21d90ec1-3c95-40ae-a707-1909145769f5:run:f9528e0a-8a9a-401a-9d99-17a85b4faa12",
+            "kind": "direct",
+            "sessionId": "f9528e0a-8a9a-401a-9d99-17a85b4faa12",
+            "updatedAt": 1776079697185,
+            "age": 11689429,
+            "systemSent": true,
+            "inputTokens": 54746,
+            "outputTokens": 8315,
+            "cacheRead": 529408,
+            "cacheWrite": 0,
+            "totalTokens": 55940,
+            "totalTokensFresh": true,
+            "remainingTokens": 144060,
+            "percentUsed": 28,
+            "model": "gpt-5.3-codex",
+            "contextTokens": 200000,
+            "flags": [
+              "system",
+              "id:f9528e0a-8a9a-401a-9d99-17a85b4faa12"
+            ]
+          },
+          {
+            "agentId": "main",
+            "key": "agent:main:telegram:group:-1003981159193:topic:4",
+            "kind": "group",
+            "sessionId": "0768cb47-e5a3-4039-93a6-1525e7e53908",
+            "updatedAt": 1776005475907,
+            "age": 85910707,
+            "totalTokens": null,
+            "totalTokensFresh": false,
+            "remainingTokens": null,
+            "percentUsed": null,
+            "model": "gpt-5.3-codex",
+            "contextTokens": 200000,
+            "flags": [
+              "id:0768cb47-e5a3-4039-93a6-1525e7e53908"
+            ]
+          },
+          {
+            "agentId": "main",
+            "key": "agent:main:telegram:group:-1003981159193:topic:3",
+            "kind": "group",
+            "sessionId": "596c1d66-5e30-41b3-9d31-ac81d0702cee",
+            "updatedAt": 1776005475883,
+            "age": 85910731,
+            "totalTokens": null,
+            "totalTokensFresh": false,
+            "remainingTokens": null,
+            "percentUsed": null,
+            "model": "gpt-5.3-codex",
+            "contextTokens": 200000,
+            "flags": [
+              "id:596c1d66-5e30-41b3-9d31-ac81d0702cee"
+            ]
+          },
+          {
+            "agentId": "main",
+            "key": "agent:main:telegram:group:-1003981159193:topic:5",
+            "kind": "group",
+            "sessionId": "2cd50fc0-51cf-4725-bdbd-c33271e01e2f",
+            "updatedAt": 1776005475857,
+            "age": 85910757,
+            "totalTokens": null,
+            "totalTokensFresh": false,
+            "remainingTokens": null,
+            "percentUsed": null,
+            "model": "gpt-5.3-codex",
+            "contextTokens": 200000,
+            "flags": [
+              "id:2cd50fc0-51cf-4725-bdbd-c33271e01e2f"
+            ]
+          },
+          {
+            "agentId": "main",
+            "key": "agent:main:telegram:group:-1003981159193:topic:2",
+            "kind": "group",
+            "sessionId": "dbd2491c-5b0e-4312-898c-806d0b6b1b91",
+            "updatedAt": 1776005475826,
+            "age": 85910788,
+            "totalTokens": null,
+            "totalTokensFresh": false,
+            "remainingTokens": null,
+            "percentUsed": null,
+            "model": "gpt-5.3-codex",
+            "contextTokens": 200000,
+            "flags": [
+              "id:dbd2491c-5b0e-4312-898c-806d0b6b1b91"
+            ]
+          }
+        ]
+      },
+      {
+        "agentId": "ai-citation-strategist",
+        "path": "/home/openclaw/.openclaw/agents/ai-citation-strategist/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "anthropologist",
+        "path": "/home/openclaw/.openclaw/agents/anthropologist/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "book-co-author",
+        "path": "/home/openclaw/.openclaw/agents/book-co-author/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "china-e-commerce-operator",
+        "path": "/home/openclaw/.openclaw/agents/china-e-commerce-operator/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "data-engineer",
+        "path": "/home/openclaw/.openclaw/agents/data-engineer/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "developer",
+        "path": "/home/openclaw/.openclaw/agents/developer/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "filament-optimization-specialist",
+        "path": "/home/openclaw/.openclaw/agents/filament-optimization-specialist/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "flightwatch",
+        "path": "/home/openclaw/.openclaw/agents/flightwatch/sessions/sessions.json",
+        "count": 1,
+        "recent": [
+          {
+            "agentId": "flightwatch",
+            "key": "agent:flightwatch:main",
+            "kind": "direct",
+            "sessionId": "7ff4a5b5-cd32-4cbb-a023-c38d4e736e34",
+            "updatedAt": 1775930884606,
+            "age": 160502008,
+            "abortedLastRun": false,
+            "inputTokens": 350,
+            "outputTokens": 156,
+            "cacheRead": 19456,
+            "cacheWrite": 0,
+            "totalTokens": 19806,
+            "totalTokensFresh": true,
+            "remainingTokens": 180194,
+            "percentUsed": 10,
+            "model": "gpt-5.3-codex",
+            "contextTokens": 200000,
+            "flags": [
+              "id:7ff4a5b5-cd32-4cbb-a023-c38d4e736e34"
+            ]
+          }
+        ]
+      },
+      {
+        "agentId": "hr-onboarding",
+        "path": "/home/openclaw/.openclaw/agents/hr-onboarding/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "legal-client-intake",
+        "path": "/home/openclaw/.openclaw/agents/legal-client-intake/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "mobile-app-builder",
+        "path": "/home/openclaw/.openclaw/agents/mobile-app-builder/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "model-qa-specialist",
+        "path": "/home/openclaw/.openclaw/agents/model-qa-specialist/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "paid-social-strategist",
+        "path": "/home/openclaw/.openclaw/agents/paid-social-strategist/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "private-domain-operator",
+        "path": "/home/openclaw/.openclaw/agents/private-domain-operator/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "product-manager",
+        "path": "/home/openclaw/.openclaw/agents/product-manager/sessions/sessions.json",
+        "count": 1,
+        "recent": [
+          {
+            "agentId": "product-manager",
+            "key": "agent:product-manager:main",
+            "kind": "direct",
+            "sessionId": "0856d30c-3c7d-4fef-a969-849d13e15f32",
+            "updatedAt": 1775922464945,
+            "age": 168921669,
+            "abortedLastRun": false,
+            "inputTokens": 20065,
+            "outputTokens": 82,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "totalTokens": 20065,
+            "totalTokensFresh": true,
+            "remainingTokens": 179935,
+            "percentUsed": 10,
+            "model": "gpt-5.3-codex",
+            "contextTokens": 200000,
+            "flags": [
+              "id:0856d30c-3c7d-4fef-a969-849d13e15f32"
+            ]
+          }
+        ]
+      },
+      {
+        "agentId": "sales-coach",
+        "path": "/home/openclaw/.openclaw/agents/sales-coach/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "sre-site-reliability-engineer",
+        "path": "/home/openclaw/.openclaw/agents/sre-site-reliability-engineer/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "study-abroad-advisor",
+        "path": "/home/openclaw/.openclaw/agents/study-abroad-advisor/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "ux-researcher",
+        "path": "/home/openclaw/.openclaw/agents/ux-researcher/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "watercooler",
+        "path": "/home/openclaw/.openclaw/agents/watercooler/sessions/sessions.json",
+        "count": 1,
+        "recent": [
+          {
+            "agentId": "watercooler",
+            "key": "agent:watercooler:main",
+            "kind": "direct",
+            "sessionId": "24253ba7-69f9-41ae-b7cf-b3b6443dadfd",
+            "updatedAt": 1776002407098,
+            "age": 88979516,
+            "thinkingLevel": "off",
+            "abortedLastRun": false,
+            "inputTokens": 1528,
+            "outputTokens": 32,
+            "cacheRead": 89984,
+            "cacheWrite": 0,
+            "totalTokens": 91512,
+            "totalTokensFresh": true,
+            "remainingTokens": 108488,
+            "percentUsed": 46,
+            "model": "gpt-5.3-codex",
+            "contextTokens": 200000,
+            "flags": [
+              "think:off",
+              "id:24253ba7-69f9-41ae-b7cf-b3b6443dadfd"
+            ]
+          }
+        ]
+      },
+      {
+        "agentId": "wechat-mini-program-developer",
+        "path": "/home/openclaw/.openclaw/agents/wechat-mini-program-developer/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      },
+      {
+        "agentId": "wechat-official-account-manager",
+        "path": "/home/openclaw/.openclaw/agents/wechat-official-account-manager/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      }
+    ]
+  },
+  "os": {
+    "platform": "linux",
+    "arch": "x64",
+    "release": "6.8.0-107-generic",
+    "label": "linux 6.8.0-107-generic (x64)"
+  },
+  "update": {
+    "root": "/home/linuxbrew/.linuxbrew/lib/node_modules/openclaw",
+    "installKind": "package",
+    "packageManager": "pnpm",
+    "deps": {
+      "manager": "pnpm",
+      "status": "unknown",
+      "lockfilePath": "/home/linuxbrew/.linuxbrew/lib/node_modules/openclaw/pnpm-lock.yaml",
+      "markerPath": "/home/linuxbrew/.linuxbrew/lib/node_modules/openclaw/node_modules/.modules.yaml",
+      "reason": "lockfile missing"
+    },
+    "registry": {
+      "latestVersion": "2026.4.12"
+    }
+  },
+  "updateChannel": "stable",
+  "updateChannelSource": "default",
+  "memory": null,
+  "memoryPlugin": {
+    "enabled": true,
+    "slot": "memory-core"
+  },
+  "gateway": {
+    "mode": "local",
+    "url": "ws://127.0.0.1:18789",
+    "urlSource": "local loopback",
+    "misconfigured": false,
+    "reachable": true,
+    "connectLatencyMs": 97,
+    "self": {
+      "host": "293926.fornex.cloud",
+      "ip": "194.154.29.191",
+      "version": "2026.4.11",
+      "platform": "linux 6.8.0-107-generic"
+    },
+    "error": null,
+    "authWarning": null
+  },
+  "gatewayService": {
+    "label": "systemd",
+    "installed": true,
+    "loaded": true,
+    "managedByOpenClaw": true,
+    "externallyManaged": false,
+    "loadedText": "enabled",
+    "runtime": {
+      "status": "running",
+      "state": "active",
+      "subState": "running",
+      "pid": 7666,
+      "lastExitStatus": 0,
+      "lastExitReason": "0"
+    },
+    "runtimeShort": "running (pid 7666, state active)"
+  },
+  "nodeService": {
+    "label": "systemd",
+    "installed": false,
+    "loaded": false,
+    "managedByOpenClaw": false,
+    "externallyManaged": false,
+    "loadedText": "disabled",
+    "runtime": {
+      "status": "unknown",
+      "detail": "Failed to connect to bus: No medium found",
+      "missingUnit": false
+    },
+    "runtimeShort": "unknown (Failed to connect to bus: No medium found)"
+  },
+  "agents": {
+    "defaultId": "main",
+    "agents": [
+      {
+        "id": "main",
+        "workspaceDir": "/home/openclaw/.openclaw/workspace",
+        "bootstrapPending": true,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/main/sessions/sessions.json",
+        "sessionsCount": 8,
+        "lastUpdatedAt": 1776091066832,
+        "lastActiveAgeMs": 314885
+      },
+      {
+        "id": "ai-citation-strategist",
+        "name": "ai-citation-strategist",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/ai-citation-strategist",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/ai-citation-strategist/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "anthropologist",
+        "name": "anthropologist",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/anthropologist",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/anthropologist/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "book-co-author",
+        "name": "book-co-author",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/book-co-author",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/book-co-author/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "china-e-commerce-operator",
+        "name": "china-e-commerce-operator",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/china-e-commerce-operator",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/china-e-commerce-operator/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "data-engineer",
+        "name": "data-engineer",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/data-engineer",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/data-engineer/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "developer",
+        "name": "developer",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/developer",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/developer/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "filament-optimization-specialist",
+        "name": "filament-optimization-specialist",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/filament-optimization-specialist",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/filament-optimization-specialist/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "flightwatch",
+        "name": "flightwatch",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/flightwatch",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/flightwatch/sessions/sessions.json",
+        "sessionsCount": 1,
+        "lastUpdatedAt": 1775930884606,
+        "lastActiveAgeMs": 160497111
+      },
+      {
+        "id": "hr-onboarding",
+        "name": "hr-onboarding",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/hr-onboarding",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/hr-onboarding/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "legal-client-intake",
+        "name": "legal-client-intake",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/legal-client-intake",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/legal-client-intake/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "mobile-app-builder",
+        "name": "mobile-app-builder",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/mobile-app-builder",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/mobile-app-builder/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "model-qa-specialist",
+        "name": "model-qa-specialist",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/model-qa-specialist",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/model-qa-specialist/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "paid-social-strategist",
+        "name": "paid-social-strategist",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/paid-social-strategist",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/paid-social-strategist/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "private-domain-operator",
+        "name": "private-domain-operator",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/private-domain-operator",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/private-domain-operator/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "product-manager",
+        "name": "product-manager",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/product-manager",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/product-manager/sessions/sessions.json",
+        "sessionsCount": 1,
+        "lastUpdatedAt": 1775922464945,
+        "lastActiveAgeMs": 168916772
+      },
+      {
+        "id": "sales-coach",
+        "name": "sales-coach",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/sales-coach",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/sales-coach/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "sre-site-reliability-engineer",
+        "name": "sre-site-reliability-engineer",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/sre-site-reliability-engineer",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/sre-site-reliability-engineer/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "study-abroad-advisor",
+        "name": "study-abroad-advisor",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/study-abroad-advisor",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/study-abroad-advisor/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "ux-researcher",
+        "name": "ux-researcher",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/ux-researcher",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/ux-researcher/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "watercooler",
+        "name": "watercooler",
+        "workspaceDir": "/home/openclaw/agents/watercooler",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/watercooler/sessions/sessions.json",
+        "sessionsCount": 1,
+        "lastUpdatedAt": 1776002407098,
+        "lastActiveAgeMs": 88974619
+      },
+      {
+        "id": "wechat-mini-program-developer",
+        "name": "wechat-mini-program-developer",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/wechat-mini-program-developer",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/wechat-mini-program-developer/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      },
+      {
+        "id": "wechat-official-account-manager",
+        "name": "wechat-official-account-manager",
+        "workspaceDir": "/home/openclaw/.openclaw/agency-agents/wechat-official-account-manager",
+        "bootstrapPending": false,
+        "sessionsPath": "/home/openclaw/.openclaw/agents/wechat-official-account-manager/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      }
+    ],
+    "totalSessions": 11,
+    "bootstrapPendingCount": 1
+  },
+  "secretDiagnostics": []
+}
