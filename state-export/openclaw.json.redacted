@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.12",
-    "lastTouchedAt": "2026-04-13T20:51:53.330Z"
+    "lastTouchedAt": "2026-04-13T20:59:35.035Z"
   },
   "wizard": {
     "lastRunAt": "2026-04-13T20:23:32.001Z",
@@ -61,6 +61,13 @@
         "name": "developer",
         "workspace": "/home/openclaw/.openclaw/agency-agents/developer",
         "agentDir": "/home/openclaw/.openclaw/agents/developer/agent",
+        "model": "openai-codex/gpt-5.3-codex"
+      },
+      {
+        "id": "sales_agent",
+        "name": "sales_agent",
+        "workspace": "/home/openclaw/.openclaw/workspace-sales_agent",
+        "agentDir": "/home/openclaw/.openclaw/agents/sales_agent/agent",
         "model": "openai-codex/gpt-5.3-codex"
       }
     ]
