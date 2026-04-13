@@ -36,18 +36,12 @@ Agents:
   Workspace: ~/.openclaw/workspace-sales_agent
   Agent dir: ~/.openclaw/agents/sales_agent/agent
   Model: openai-codex/gpt-5.3-codex
-  Routing rules: 1
-  Routing: Telegram sales_bot
-  Providers:
-    - Telegram sales_bot: not configured
+  Routing rules: 0
 - marketing_agent
   Identity: 📣 Marketing (IDENTITY.md)
   Workspace: ~/.openclaw/workspace-marketing_agent
   Agent dir: ~/.openclaw/agents/marketing_agent/agent
   Model: openai-codex/gpt-5.3-codex
-  Routing rules: 1
-  Routing: Telegram marketing_bot
-  Providers:
-    - Telegram marketing_bot: not configured
+  Routing rules: 0
 Routing rules map channel/account/peer to an agent. Use --bindings for full rules.
 Channel status reflects local config/creds. For live health: openclaw channels status --probe.
