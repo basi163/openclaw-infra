@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.12",
-    "lastTouchedAt": "2026-04-13T21:04:54.720Z"
+    "lastTouchedAt": "2026-04-13T21:05:27.764Z"
   },
   "wizard": {
     "lastRunAt": "2026-04-13T20:23:32.001Z",
@@ -151,7 +151,8 @@
         "approvers": [
           "368889"
         ]
-      }
+      },
+      "defaultAccount": "main_bot"
     }
   },
   "gateway": {
