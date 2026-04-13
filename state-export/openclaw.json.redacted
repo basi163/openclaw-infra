@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.4.10",
-    "lastTouchedAt": "2026-04-12T19:40:07.007Z"
+    "lastTouchedVersion": "2026.4.12",
+    "lastTouchedAt": "2026-04-13T20:23:32.409Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-12T15:23:40.940Z",
-    "lastRunVersion": "2026.4.10",
+    "lastRunAt": "2026-04-13T20:23:32.001Z",
+    "lastRunVersion": "2026.4.12",
     "lastRunCommand": "doctor",
     "lastRunMode": "local"
   },
@@ -308,6 +308,5 @@
   },
   "messages": {
     "ackReactionScope": "group-mentions"
-  },
-  "elevated": {}
+  }
 }
