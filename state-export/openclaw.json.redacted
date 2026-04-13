@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.12",
-    "lastTouchedAt": "2026-04-13T20:59:35.035Z"
+    "lastTouchedAt": "2026-04-13T21:02:32.226Z"
   },
   "wizard": {
     "lastRunAt": "2026-04-13T20:23:32.001Z",
@@ -68,6 +68,13 @@
         "name": "sales_agent",
         "workspace": "/home/openclaw/.openclaw/workspace-sales_agent",
         "agentDir": "/home/openclaw/.openclaw/agents/sales_agent/agent",
+        "model": "openai-codex/gpt-5.3-codex"
+      },
+      {
+        "id": "marketing_agent",
+        "name": "marketing_agent",
+        "workspace": "/home/openclaw/.openclaw/workspace-marketing_agent",
+        "agentDir": "/home/openclaw/.openclaw/agents/marketing_agent/agent",
         "model": "openai-codex/gpt-5.3-codex"
       }
     ]
@@ -217,5 +224,15 @@
   },
   "messages": {
     "ackReactionScope": "group-mentions"
-  }
+  },
+  "bindings": [
+    {
+      "type": "route",
+      "agentId": "main",
+      "match": {
+        "channel": "telegram",
+        "accountId": "main_bot"
+      }
+    }
+  ]
 }

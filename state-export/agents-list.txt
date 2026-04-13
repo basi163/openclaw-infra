@@ -4,10 +4,10 @@ Agents:
   Workspace: ~/.openclaw/workspace
   Agent dir: ~/.openclaw/agents/main/agent
   Model: openai-codex/gpt-5.3-codex
-  Routing rules: 0
-  Routing: default (no explicit rules)
+  Routing rules: 1
+  Routing: Telegram main_bot
   Providers:
-    - Telegram default: configured
+    - Telegram main_bot: configured
 - mobile-app-builder
   Workspace: ~/.openclaw/agency-agents/mobile-app-builder
   Agent dir: ~/.openclaw/agents/mobile-app-builder/agent
@@ -36,7 +36,10 @@ Agents:
   Workspace: ~/.openclaw/workspace-sales_agent
   Agent dir: ~/.openclaw/agents/sales_agent/agent
   Model: openai-codex/gpt-5.3-codex
-  Routing rules: 0
+  Routing rules: 1
+  Routing: Telegram sales_bot
+  Providers:
+    - Telegram sales_bot: not configured
 - marketing_agent
   Identity: 📣 Marketing (IDENTITY.md)
   Workspace: ~/.openclaw/workspace-marketing_agent
