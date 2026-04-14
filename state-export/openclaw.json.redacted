@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.12",
-    "lastTouchedAt": "2026-04-14T05:08:34.633Z"
+    "lastTouchedAt": "2026-04-14T05:13:17.206Z"
   },
   "wizard": {
     "lastRunAt": "2026-04-14T05:08:33.951Z",
@@ -173,7 +173,8 @@
       "lossless-claw",
       "telegram",
       "openai",
-      "memory-core"
+      "memory-core",
+      "deepseek"
     ],
     "load": {
       "paths": []
@@ -194,6 +195,9 @@
       },
       "telegram": {
         "config": {}
+      },
+      "deepseek": {
+        "enabled": true
       }
     },
     "installs": {
