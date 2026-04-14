@@ -3,7 +3,7 @@ Agents:
   Identity: 🧭 Main (IDENTITY.md)
   Workspace: ~/.openclaw/workspace
   Agent dir: ~/.openclaw/agents/main/agent
-  Model: openai-codex/gpt-5.3-codex
+  Model: deepseek/deepseek-chat
   Routing rules: 1
   Routing: Telegram main_bot
   Providers:
@@ -11,13 +11,13 @@ Agents:
 - mobile-app-builder
   Workspace: ~/.openclaw/agency-agents/mobile-app-builder
   Agent dir: ~/.openclaw/agents/mobile-app-builder/agent
-  Model: openai-codex/gpt-5.3-codex
+  Model: deepseek/deepseek-chat
   Routing rules: 0
 - flightwatch
   Identity: ✈️ flightwatch (IDENTITY.md)
   Workspace: ~/.openclaw/agency-agents/flightwatch
   Agent dir: ~/.openclaw/agents/flightwatch/agent
-  Model: openai-codex/gpt-5.3-codex
+  Model: deepseek/deepseek-chat
   Routing rules: 0
 - watercooler
   Identity: 💧 Water Cooler (IDENTITY.md)
