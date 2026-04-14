@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.12",
-    "lastTouchedAt": "2026-04-14T05:13:17.206Z"
+    "lastTouchedAt": "2026-04-14T06:50:23.383Z"
   },
   "wizard": {
     "lastRunAt": "2026-04-14T05:08:33.951Z",
@@ -65,6 +65,20 @@
         "workspace": "/home/openclaw/.openclaw/agency-agents/developer",
         "agentDir": "/home/openclaw/.openclaw/agents/developer/agent",
         "model": "openai-codex/gpt-5.3-codex"
+      },
+      {
+        "id": "sales_agent",
+        "name": "sales_agent",
+        "workspace": "/home/openclaw/.openclaw/workspace-sales_agent",
+        "agentDir": "/home/openclaw/.openclaw/agents/sales_agent/agent",
+        "model": "deepseek/deepseek-chat"
+      },
+      {
+        "id": "marketing_agent",
+        "name": "marketing_agent",
+        "workspace": "/home/openclaw/.openclaw/workspace-marketing_agent",
+        "agentDir": "/home/openclaw/.openclaw/agents/marketing_agent/agent",
+        "model": "deepseek/deepseek-chat"
       }
     ]
   },

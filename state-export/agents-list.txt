@@ -36,5 +36,10 @@ Agents:
   Agent dir: ~/.openclaw/agents/sales_agent/agent
   Model: deepseek/deepseek-chat
   Routing rules: 0
+- marketing_agent
+  Workspace: ~/.openclaw/workspace-marketing_agent
+  Agent dir: ~/.openclaw/agents/marketing_agent/agent
+  Model: deepseek/deepseek-chat
+  Routing rules: 0
 Routing rules map channel/account/peer to an agent. Use --bindings for full rules.
 Channel status reflects local config/creds. For live health: openclaw channels status --probe.
