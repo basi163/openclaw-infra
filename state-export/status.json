@@ -53,34 +53,34 @@
   ],
   "queuedSystemEvents": [],
   "tasks": {
-    "total": 194,
-    "active": 2,
+    "total": 195,
+    "active": 3,
     "terminal": 192,
-    "failures": 80,
+    "failures": 79,
     "byStatus": {
       "queued": 0,
-      "running": 2,
-      "succeeded": 112,
+      "running": 3,
+      "succeeded": 113,
       "failed": 76,
       "timed_out": 2,
       "cancelled": 0,
-      "lost": 2
+      "lost": 1
     },
     "byRuntime": {
       "subagent": 2,
       "acp": 0,
       "cli": 179,
-      "cron": 13
+      "cron": 14
     }
   },
   "taskAudit": {
-    "total": 16,
+    "total": 15,
     "warnings": 13,
-    "errors": 3,
+    "errors": 2,
     "byCode": {
       "stale_queued": 0,
       "stale_running": 1,
-      "lost": 2,
+      "lost": 1,
       "delivery_failed": 0,
       "missing_cleanup": 0,
       "inconsistent_timestamps": 13
@@ -96,7 +96,7 @@
       "/home/openclaw/.openclaw/agents/sales_agent/sessions/sessions.json",
       "/home/openclaw/.openclaw/agents/watercooler/sessions/sessions.json"
     ],
-    "count": 27,
+    "count": 28,
     "defaults": {
       "model": "deepseek-chat",
       "contextTokens": 131072
@@ -104,11 +104,59 @@
     "recent": [
       {
         "agentId": "main",
+        "key": "agent:main:cron:d0189b9a-e446-411e-ac1f-ef3618bd0e66",
+        "kind": "direct",
+        "sessionId": "5bb528c8-30c8-4920-a380-628e3ca8c9f4",
+        "updatedAt": 1776152610835,
+        "age": 28623,
+        "systemSent": true,
+        "abortedLastRun": false,
+        "inputTokens": 2449,
+        "outputTokens": 3332,
+        "cacheRead": 251392,
+        "cacheWrite": 0,
+        "totalTokens": 19391,
+        "totalTokensFresh": true,
+        "remainingTokens": 111681,
+        "percentUsed": 15,
+        "model": "deepseek-chat",
+        "contextTokens": 131072,
+        "flags": [
+          "system",
+          "id:5bb528c8-30c8-4920-a380-628e3ca8c9f4"
+        ]
+      },
+      {
+        "agentId": "main",
+        "key": "agent:main:cron:d0189b9a-e446-411e-ac1f-ef3618bd0e66:run:5bb528c8-30c8-4920-a380-628e3ca8c9f4",
+        "kind": "direct",
+        "sessionId": "5bb528c8-30c8-4920-a380-628e3ca8c9f4",
+        "updatedAt": 1776152610835,
+        "age": 28623,
+        "systemSent": true,
+        "abortedLastRun": false,
+        "inputTokens": 2449,
+        "outputTokens": 3332,
+        "cacheRead": 251392,
+        "cacheWrite": 0,
+        "totalTokens": 19391,
+        "totalTokensFresh": true,
+        "remainingTokens": 111681,
+        "percentUsed": 15,
+        "model": "deepseek-chat",
+        "contextTokens": 131072,
+        "flags": [
+          "system",
+          "id:5bb528c8-30c8-4920-a380-628e3ca8c9f4"
+        ]
+      },
+      {
+        "agentId": "main",
         "key": "agent:main:telegram:direct:368889",
         "kind": "direct",
         "sessionId": "682c212b-8d7d-4d88-8284-4a4c03faece1",
         "updatedAt": 1776152475360,
-        "age": 101641,
+        "age": 164098,
         "systemSent": true,
         "abortedLastRun": false,
         "inputTokens": 178,
@@ -128,35 +176,11 @@
       },
       {
         "agentId": "main",
-        "key": "agent:main:cron:d0189b9a-e446-411e-ac1f-ef3618bd0e66",
-        "kind": "direct",
-        "sessionId": "9c40b218-7b4b-465e-b690-a2aca3e3be23",
-        "updatedAt": 1776152430742,
-        "age": 146259,
-        "systemSent": true,
-        "abortedLastRun": false,
-        "inputTokens": 4170,
-        "outputTokens": 9272,
-        "cacheRead": 350208,
-        "cacheWrite": 0,
-        "totalTokens": 26835,
-        "totalTokensFresh": true,
-        "remainingTokens": 173165,
-        "percentUsed": 13,
-        "model": "deepseek-chat",
-        "contextTokens": 200000,
-        "flags": [
-          "system",
-          "id:9c40b218-7b4b-465e-b690-a2aca3e3be23"
-        ]
-      },
-      {
-        "agentId": "main",
         "key": "agent:main:cron:d0189b9a-e446-411e-ac1f-ef3618bd0e66:run:9c40b218-7b4b-465e-b690-a2aca3e3be23",
         "kind": "direct",
         "sessionId": "9c40b218-7b4b-465e-b690-a2aca3e3be23",
         "updatedAt": 1776152430742,
-        "age": 146259,
+        "age": 208716,
         "systemSent": true,
         "abortedLastRun": false,
         "inputTokens": 4170,
@@ -180,7 +204,7 @@
         "kind": "direct",
         "sessionId": "615e586c-701e-4ce4-b98b-6a783fd67617",
         "updatedAt": 1776152202022,
-        "age": 374979,
+        "age": 437436,
         "abortedLastRun": false,
         "inputTokens": 17153,
         "outputTokens": 1246,
@@ -202,17 +226,17 @@
         "kind": "direct",
         "sessionId": "467cd3ee-0953-438c-b0f1-ebdfcf70498b",
         "updatedAt": 1776152040733,
-        "age": 536268,
+        "age": 598725,
         "systemSent": true,
         "abortedLastRun": false,
-        "inputTokens": 1572,
-        "outputTokens": 1098,
-        "cacheRead": 154048,
+        "inputTokens": 2449,
+        "outputTokens": 3332,
+        "cacheRead": 251392,
         "cacheWrite": 0,
-        "totalTokens": 16525,
+        "totalTokens": 19391,
         "totalTokensFresh": true,
-        "remainingTokens": 114547,
-        "percentUsed": 13,
+        "remainingTokens": 111681,
+        "percentUsed": 15,
         "model": "deepseek-chat",
         "contextTokens": 131072,
         "flags": [
@@ -226,7 +250,7 @@
         "kind": "direct",
         "sessionId": "c7550ee4-d179-4d3a-a587-e3716de87e96",
         "updatedAt": 1776151950744,
-        "age": 626257,
+        "age": 688714,
         "systemSent": true,
         "abortedLastRun": false,
         "inputTokens": 4170,
@@ -250,7 +274,7 @@
         "kind": "direct",
         "sessionId": "ae631fef-72c7-467e-87fc-51cf4abd5ccc",
         "updatedAt": 1776151943991,
-        "age": 633010,
+        "age": 695467,
         "systemSent": true,
         "abortedLastRun": false,
         "inputTokens": 785,
@@ -274,7 +298,7 @@
         "kind": "direct",
         "sessionId": "19e5768c-dbc4-4f8f-9b91-5a91b57f5c5b",
         "updatedAt": 1776151773175,
-        "age": 803826,
+        "age": 866283,
         "systemSent": true,
         "abortedLastRun": false,
         "inputTokens": 1572,
@@ -298,7 +322,7 @@
         "kind": "direct",
         "sessionId": "9b3775ea-5f24-408c-9ea1-57d9d15e9ed9",
         "updatedAt": 1776151620731,
-        "age": 956270,
+        "age": 1018727,
         "systemSent": true,
         "abortedLastRun": false,
         "inputTokens": 2192,
@@ -315,45 +339,69 @@
           "system",
           "id:9b3775ea-5f24-408c-9ea1-57d9d15e9ed9"
         ]
-      },
-      {
-        "agentId": "main",
-        "key": "agent:main:cron:d0189b9a-e446-411e-ac1f-ef3618bd0e66:run:53c2d41c-6f34-49f8-b82b-ec5266830199",
-        "kind": "direct",
-        "sessionId": "53c2d41c-6f34-49f8-b82b-ec5266830199",
-        "updatedAt": 1776151470770,
-        "age": 1106231,
-        "systemSent": true,
-        "abortedLastRun": false,
-        "inputTokens": 2279,
-        "outputTokens": 2285,
-        "cacheRead": 226432,
-        "cacheWrite": 0,
-        "totalTokens": 18284,
-        "totalTokensFresh": true,
-        "remainingTokens": 112788,
-        "percentUsed": 14,
-        "model": "deepseek-chat",
-        "contextTokens": 131072,
-        "flags": [
-          "system",
-          "id:53c2d41c-6f34-49f8-b82b-ec5266830199"
-        ]
       }
     ],
     "byAgent": [
       {
         "agentId": "main",
         "path": "/home/openclaw/.openclaw/agents/main/sessions/sessions.json",
-        "count": 24,
+        "count": 25,
         "recent": [
+          {
+            "agentId": "main",
+            "key": "agent:main:cron:d0189b9a-e446-411e-ac1f-ef3618bd0e66",
+            "kind": "direct",
+            "sessionId": "5bb528c8-30c8-4920-a380-628e3ca8c9f4",
+            "updatedAt": 1776152610835,
+            "age": 28623,
+            "systemSent": true,
+            "abortedLastRun": false,
+            "inputTokens": 2449,
+            "outputTokens": 3332,
+            "cacheRead": 251392,
+            "cacheWrite": 0,
+            "totalTokens": 19391,
+            "totalTokensFresh": true,
+            "remainingTokens": 111681,
+            "percentUsed": 15,
+            "model": "deepseek-chat",
+            "contextTokens": 131072,
+            "flags": [
+              "system",
+              "id:5bb528c8-30c8-4920-a380-628e3ca8c9f4"
+            ]
+          },
+          {
+            "agentId": "main",
+            "key": "agent:main:cron:d0189b9a-e446-411e-ac1f-ef3618bd0e66:run:5bb528c8-30c8-4920-a380-628e3ca8c9f4",
+            "kind": "direct",
+            "sessionId": "5bb528c8-30c8-4920-a380-628e3ca8c9f4",
+            "updatedAt": 1776152610835,
+            "age": 28623,
+            "systemSent": true,
+            "abortedLastRun": false,
+            "inputTokens": 2449,
+            "outputTokens": 3332,
+            "cacheRead": 251392,
+            "cacheWrite": 0,
+            "totalTokens": 19391,
+            "totalTokensFresh": true,
+            "remainingTokens": 111681,
+            "percentUsed": 15,
+            "model": "deepseek-chat",
+            "contextTokens": 131072,
+            "flags": [
+              "system",
+              "id:5bb528c8-30c8-4920-a380-628e3ca8c9f4"
+            ]
+          },
           {
             "agentId": "main",
             "key": "agent:main:telegram:direct:368889",
             "kind": "direct",
             "sessionId": "682c212b-8d7d-4d88-8284-4a4c03faece1",
             "updatedAt": 1776152475360,
-            "age": 101641,
+            "age": 164098,
             "systemSent": true,
             "abortedLastRun": false,
             "inputTokens": 178,
@@ -373,35 +421,11 @@
           },
           {
             "agentId": "main",
-            "key": "agent:main:cron:d0189b9a-e446-411e-ac1f-ef3618bd0e66",
-            "kind": "direct",
-            "sessionId": "9c40b218-7b4b-465e-b690-a2aca3e3be23",
-            "updatedAt": 1776152430742,
-            "age": 146259,
-            "systemSent": true,
-            "abortedLastRun": false,
-            "inputTokens": 4170,
-            "outputTokens": 9272,
-            "cacheRead": 350208,
-            "cacheWrite": 0,
-            "totalTokens": 26835,
-            "totalTokensFresh": true,
-            "remainingTokens": 173165,
-            "percentUsed": 13,
-            "model": "deepseek-chat",
-            "contextTokens": 200000,
-            "flags": [
-              "system",
-              "id:9c40b218-7b4b-465e-b690-a2aca3e3be23"
-            ]
-          },
-          {
-            "agentId": "main",
             "key": "agent:main:cron:d0189b9a-e446-411e-ac1f-ef3618bd0e66:run:9c40b218-7b4b-465e-b690-a2aca3e3be23",
             "kind": "direct",
             "sessionId": "9c40b218-7b4b-465e-b690-a2aca3e3be23",
             "updatedAt": 1776152430742,
-            "age": 146259,
+            "age": 208716,
             "systemSent": true,
             "abortedLastRun": false,
             "inputTokens": 4170,
@@ -425,17 +449,17 @@
             "kind": "direct",
             "sessionId": "467cd3ee-0953-438c-b0f1-ebdfcf70498b",
             "updatedAt": 1776152040733,
-            "age": 536268,
+            "age": 598725,
             "systemSent": true,
             "abortedLastRun": false,
-            "inputTokens": 1572,
-            "outputTokens": 1098,
-            "cacheRead": 154048,
+            "inputTokens": 2449,
+            "outputTokens": 3332,
+            "cacheRead": 251392,
             "cacheWrite": 0,
-            "totalTokens": 16525,
+            "totalTokens": 19391,
             "totalTokensFresh": true,
-            "remainingTokens": 114547,
-            "percentUsed": 13,
+            "remainingTokens": 111681,
+            "percentUsed": 15,
             "model": "deepseek-chat",
             "contextTokens": 131072,
             "flags": [
@@ -449,7 +473,7 @@
             "kind": "direct",
             "sessionId": "c7550ee4-d179-4d3a-a587-e3716de87e96",
             "updatedAt": 1776151950744,
-            "age": 626257,
+            "age": 688714,
             "systemSent": true,
             "abortedLastRun": false,
             "inputTokens": 4170,
@@ -473,7 +497,7 @@
             "kind": "direct",
             "sessionId": "ae631fef-72c7-467e-87fc-51cf4abd5ccc",
             "updatedAt": 1776151943991,
-            "age": 633010,
+            "age": 695467,
             "systemSent": true,
             "abortedLastRun": false,
             "inputTokens": 785,
@@ -497,7 +521,7 @@
             "kind": "direct",
             "sessionId": "19e5768c-dbc4-4f8f-9b91-5a91b57f5c5b",
             "updatedAt": 1776151773175,
-            "age": 803826,
+            "age": 866283,
             "systemSent": true,
             "abortedLastRun": false,
             "inputTokens": 1572,
@@ -521,7 +545,7 @@
             "kind": "direct",
             "sessionId": "9b3775ea-5f24-408c-9ea1-57d9d15e9ed9",
             "updatedAt": 1776151620731,
-            "age": 956270,
+            "age": 1018727,
             "systemSent": true,
             "abortedLastRun": false,
             "inputTokens": 2192,
@@ -545,7 +569,7 @@
             "kind": "direct",
             "sessionId": "53c2d41c-6f34-49f8-b82b-ec5266830199",
             "updatedAt": 1776151470770,
-            "age": 1106231,
+            "age": 1168688,
             "systemSent": true,
             "abortedLastRun": false,
             "inputTokens": 2279,
@@ -561,28 +585,6 @@
             "flags": [
               "system",
               "id:53c2d41c-6f34-49f8-b82b-ec5266830199"
-            ]
-          },
-          {
-            "agentId": "main",
-            "key": "agent:main:subagent:be41a663-9eb1-4bb8-813d-e42f6ae00a1a",
-            "kind": "direct",
-            "sessionId": "75f88e47-16fc-4e07-a03c-1d8ff870a96c",
-            "updatedAt": 1776151470370,
-            "age": 1106631,
-            "abortedLastRun": false,
-            "inputTokens": 7451,
-            "outputTokens": 1556,
-            "cacheRead": 173440,
-            "cacheWrite": 0,
-            "totalTokens": 15011,
-            "totalTokensFresh": true,
-            "remainingTokens": 116061,
-            "percentUsed": 11,
-            "model": "deepseek-chat",
-            "contextTokens": 131072,
-            "flags": [
-              "id:75f88e47-16fc-4e07-a03c-1d8ff870a96c"
             ]
           }
         ]
@@ -604,7 +606,7 @@
             "kind": "direct",
             "sessionId": "7ff4a5b5-cd32-4cbb-a023-c38d4e736e34",
             "updatedAt": 1775930884606,
-            "age": 221692395,
+            "age": 221754852,
             "abortedLastRun": false,
             "inputTokens": 350,
             "outputTokens": 156,
@@ -633,7 +635,7 @@
             "kind": "direct",
             "sessionId": "615e586c-701e-4ce4-b98b-6a783fd67617",
             "updatedAt": 1776152202022,
-            "age": 374979,
+            "age": 437436,
             "abortedLastRun": false,
             "inputTokens": 17153,
             "outputTokens": 1246,
@@ -674,7 +676,7 @@
             "kind": "direct",
             "sessionId": "24253ba7-69f9-41ae-b7cf-b3b6443dadfd",
             "updatedAt": 1776002407098,
-            "age": 150169903,
+            "age": 150232360,
             "thinkingLevel": "off",
             "abortedLastRun": false,
             "inputTokens": 1528,
@@ -730,7 +732,7 @@
     "urlSource": "local loopback",
     "misconfigured": false,
     "reachable": true,
-    "connectLatencyMs": 64,
+    "connectLatencyMs": 114,
     "self": {
       "host": "293926.fornex.cloud",
       "ip": "194.154.29.191",
@@ -779,9 +781,9 @@
         "workspaceDir": "/home/openclaw/.openclaw/workspace",
         "bootstrapPending": true,
         "sessionsPath": "/home/openclaw/.openclaw/agents/main/sessions/sessions.json",
-        "sessionsCount": 24,
-        "lastUpdatedAt": 1776152475360,
-        "lastActiveAgeMs": 97338
+        "sessionsCount": 25,
+        "lastUpdatedAt": 1776152610835,
+        "lastActiveAgeMs": 24127
       },
       {
         "id": "developer",
@@ -801,7 +803,7 @@
         "sessionsPath": "/home/openclaw/.openclaw/agents/flightwatch/sessions/sessions.json",
         "sessionsCount": 1,
         "lastUpdatedAt": 1775930884606,
-        "lastActiveAgeMs": 221688092
+        "lastActiveAgeMs": 221750356
       },
       {
         "id": "marketing_agent",
@@ -811,7 +813,7 @@
         "sessionsPath": "/home/openclaw/.openclaw/agents/marketing_agent/sessions/sessions.json",
         "sessionsCount": 1,
         "lastUpdatedAt": 1776152202022,
-        "lastActiveAgeMs": 370676
+        "lastActiveAgeMs": 432940
       },
       {
         "id": "mobile-app-builder",
@@ -841,10 +843,10 @@
         "sessionsPath": "/home/openclaw/.openclaw/agents/watercooler/sessions/sessions.json",
         "sessionsCount": 1,
         "lastUpdatedAt": 1776002407098,
-        "lastActiveAgeMs": 150165600
+        "lastActiveAgeMs": 150227864
       }
     ],
-    "totalSessions": 27,
+    "totalSessions": 28,
     "bootstrapPendingCount": 3
   },
   "secretDiagnostics": []
