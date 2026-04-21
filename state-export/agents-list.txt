@@ -43,3 +43,4 @@ Agents:
   Routing rules: 0
 Routing rules map channel/account/peer to an agent. Use --bindings for full rules.
 Channel status reflects local config/creds. For live health: openclaw channels status --probe.
+[agents/auth-profiles] synced openai-codex credentials from external cli
