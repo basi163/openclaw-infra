@@ -212,11 +212,7 @@
         "enabled": true
       },
       "agentmail": {
-        "enabled": true,
-        "config": {
-          "token": "***REDACTED***",
-          "emailAddress": "itvibe@agentmail.to"
-        }
+        "enabled": true
       }
     },
     "installs": {
