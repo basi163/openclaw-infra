@@ -1,10 +1,10 @@
 │
-◇  Config warnings ──────────────────────────────────────────────────╮
-│                                                                    │
-│  - plugins.allow: plugin not found: agentmail (stale config entry  │
-│    ignored; remove it from plugins config)                         │
-│                                                                    │
-├────────────────────────────────────────────────────────────────────╯
+◇  Config warnings ─────────────────────────────────────────────────────╮
+│                                                                       │
+│  - plugins.allow: plugin not found: openclaw-agentmail (stale config  │
+│    entry ignored; remove it from plugins config)                      │
+│                                                                       │
+├───────────────────────────────────────────────────────────────────────╯
 Agents:
 - main (default)
   Identity: 🧭 Main (IDENTITY.md)

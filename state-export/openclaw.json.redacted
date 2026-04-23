@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.12",
-    "lastTouchedAt": "2026-04-23T11:25:16.947Z"
+    "lastTouchedAt": "2026-04-23T11:28:06.081Z"
   },
   "wizard": {
     "lastRunAt": "2026-04-14T05:08:33.951Z",
@@ -189,7 +189,7 @@
       "openai",
       "memory-core",
       "deepseek",
-      "agentmail"
+      "openclaw-agentmail"
     ],
     "load": {
       "paths": []
