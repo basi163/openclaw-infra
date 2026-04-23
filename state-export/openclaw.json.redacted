@@ -188,13 +188,9 @@
       "telegram",
       "openai",
       "memory-core",
-      "deepseek"
+      "deepseek",
+      "agentmail"
     ],
-    "load": {
-      "paths": [
-        "/home/openclaw/.openclaw/plugins"
-      ]
-    },
     "entries": {
       "openai": {
         "enabled": true,
@@ -215,9 +211,7 @@
       "deepseek": {
         "enabled": true
       },
-      "agentmail": {
-        "enabled": false
-      }
+      "agentmail": {}
     },
     "installs": {
       "lossless-claw": {

@@ -1,3 +1,12 @@
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.agentmail: plugin not found: agentmail (stale config  │
+│    entry ignored; remove it from plugins config)                         │
+│  - plugins.allow: plugin not found: agentmail (stale config entry        │
+│    ignored; remove it from plugins config)                               │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
 Agents:
 - main (default)
   Identity: 🧭 Main (IDENTITY.md)
