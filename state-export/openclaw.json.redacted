@@ -188,8 +188,7 @@
       "telegram",
       "openai",
       "memory-core",
-      "deepseek",
-      "agentmail"
+      "deepseek"
     ],
     "entries": {
       "openai": {
@@ -210,8 +209,7 @@
       },
       "deepseek": {
         "enabled": true
-      },
-      "agentmail": {}
+      }
     },
     "installs": {
       "lossless-claw": {
@@ -227,6 +225,9 @@
         "resolvedAt": "2026-04-11T15:03:27.371Z",
         "installedAt": "2026-04-11T15:05:50.295Z"
       }
+    },
+    "load": {
+      "paths": []
     }
   },
   "messages": {
