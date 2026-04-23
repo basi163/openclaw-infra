@@ -217,9 +217,7 @@
         "enabled": true
       },
       "agentmail": {
-        "config": {
-          "apiKey": "***REDACTED***"
-        }
+        "enabled": true
       }
     },
     "installs": {
