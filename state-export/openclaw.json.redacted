@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.12",
-    "lastTouchedAt": "2026-04-15T09:09:40.989Z"
+    "lastTouchedAt": "2026-04-23T11:25:16.947Z"
   },
   "wizard": {
     "lastRunAt": "2026-04-14T05:08:33.951Z",
@@ -188,7 +188,8 @@
       "telegram",
       "openai",
       "memory-core",
-      "deepseek"
+      "deepseek",
+      "agentmail"
     ],
     "load": {
       "paths": []
