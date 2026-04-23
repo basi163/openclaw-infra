@@ -188,7 +188,8 @@
       "telegram",
       "openai",
       "memory-core",
-      "deepseek"
+      "deepseek",
+      "agentmail"
     ],
     "entries": {
       "openai": {
@@ -209,6 +210,13 @@
       },
       "deepseek": {
         "enabled": true
+      },
+      "agentmail": {
+        "enabled": true,
+        "config": {
+          "token": "***REDACTED***",
+          "emailAddress": "itvibe@agentmail.to"
+        }
       }
     },
     "installs": {
