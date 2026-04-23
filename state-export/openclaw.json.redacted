@@ -188,8 +188,7 @@
       "telegram",
       "openai",
       "memory-core",
-      "deepseek",
-      "agentmail"
+      "deepseek"
     ],
     "load": {
       "paths": [
@@ -217,7 +216,7 @@
         "enabled": true
       },
       "agentmail": {
-        "enabled": true
+        "enabled": false
       }
     },
     "installs": {
