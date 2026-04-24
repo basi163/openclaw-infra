@@ -1,8 +1,0 @@
-# generated
-backups/
-*.tar.gz
-*.log
-
-# safety
-.env
-secrets/

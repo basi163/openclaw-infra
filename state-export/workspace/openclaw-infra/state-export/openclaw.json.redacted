@@ -1,0 +1,32 @@
+{
+  "agents": {
+    "defaults": {
+      "memorySearch": {
+        "enabled": false
+      }
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.4.10",
+    "lastTouchedAt": "2026-04-11T13:03:14.344Z"
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "***REDACTED***"
+    },
+    "port": 18789,
+    "bind": "loopback",
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-11T13:03:14.120Z",
+    "lastRunVersion": "2026.4.10",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  }
+}
