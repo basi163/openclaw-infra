@@ -7,6 +7,26 @@
 - Ведет версионность в GitHub
 - Делает автосинхронизацию по cron (в фоне)
 - Дает команды backup/restore
+- Фиксирует рабочий профиль стабильности для прод-сервера
+
+## Production Baseline (стабильный профиль)
+На этом сервере текущая рабочая стабильная версия: `openclaw@2026.4.12`.
+
+Важно:
+- `latest stable` не всегда равен операционно стабильной версии в конкретном окружении
+- поэтому прод обновляется консервативно: сначала проверка, потом фиксация
+
+Текущие опорные настройки стабильности:
+- Канал обновлений: `stable` (только ручные обновления)
+- Пин версии для прода: `2026.4.12`
+- `gateway.bind=loopback`
+- `gateway.reload=hot`
+- Один systemd unit для gateway: `openclaw-gateway.service`
+- Автовосстановление процесса: `Restart=always`, `RestartSec=5`
+- Защита от lock-зависаний: очистка stale lock в `ExecStartPre`
+- Отключение внутреннего respawn: `OPENCLAW_NO_RESPAWN=1`
+- Node compile cache: `NODE_COMPILE_CACHE=/var/tmp/openclaw-compile-cache`
+- Пост-апдейт проверка: `doctor -> restart -> status --deep -> health retries -> logs`
 
 ## Быстрый запуск на новом сервере
 ```bash
@@ -74,17 +94,65 @@ bash scripts/install-openclaw-gateway-compat.sh
 - создает `~openclaw/.config/systemd/user/openclaw-gateway.service` как symlink на системный unit, чтобы новые версии OpenClaw корректно считали сервис установленным
 - переживает обновления OpenClaw, потому что не зависит от `node_modules`
 
-Для будущих обновлений используй обертку:
+## Обновление: безопасный прод-процесс
+
+### 1) Проверить и зафиксировать стабильную версию
 ```bash
-bash scripts/update-openclaw-safe.sh
+sudo bash scripts/pin-openclaw-stable.sh
 ```
 
-Она:
-- переустанавливает shim
-- запускает `openclaw update --yes`
+По умолчанию скрипт ставит `openclaw@2026.4.12`.
+Если нужно переопределить:
+```bash
+sudo OPENCLAW_STABLE_VERSION=2026.4.12 bash scripts/pin-openclaw-stable.sh
+```
+
+### 2) Осторожный апдейт с проверками
+```bash
+sudo bash scripts/update-openclaw-safe.sh
+sudo bash scripts/post-update-check.sh
+```
+
+`update-openclaw-safe.sh`:
+- переустанавливает shim совместимости
+- обновляет OpenClaw (по умолчанию до `openclaw@2026.4.12`, через `OPENCLAW_NPM_SPEC` можно переопределить)
 - проверяет `openclaw status --json`
 - прогоняет smoke test `openclaw gateway restart`
 - печатает хвост `journalctl -u openclaw-gateway.service`
+
+`post-update-check.sh`:
+- прогоняет `openclaw doctor --deep --non-interactive`
+- перезапускает `openclaw-gateway.service`
+- снимает `openclaw status --deep --json`
+- делает retry для `openclaw health --json`
+- печатает свежие логи `journalctl -u openclaw-gateway.service`
+
+### 3) Переход на новую stable-версию
+Рекомендуемый порядок:
+```bash
+# backup перед изменением версии
+bash scripts/backup-create.sh
+
+# пробный апдейт на кандидата
+sudo OPENCLAW_NPM_SPEC='openclaw@latest' bash scripts/update-openclaw-safe.sh
+sudo bash scripts/post-update-check.sh
+
+# если кандидат стабильный в этом окружении — зафиксировать новый пин
+sudo OPENCLAW_STABLE_VERSION='<новая-версия>' bash scripts/pin-openclaw-stable.sh
+```
+
+Если после апдейта деградация:
+- сразу откат на предыдущий пин через `scripts/pin-openclaw-stable.sh`
+- `systemctl restart openclaw-gateway.service`
+- повторный `scripts/post-update-check.sh`
+
+## Минимальный чеклист стабильности
+- Нет дублирующих gateway unit'ов (`systemd --user` и системный не конфликтуют)
+- Только один активный процесс gateway
+- Нет конфликта порта gateway
+- `openclaw status --deep --json` без критических ошибок
+- `openclaw health --json` проходит в пределах retry
+- Логи `journalctl -u openclaw-gateway.service` без crash-loop
 
 ## Важно
 - Секреты в git не коммитим

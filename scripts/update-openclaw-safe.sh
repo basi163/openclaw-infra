@@ -4,7 +4,8 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 OPENCLAW_BIN="${OPENCLAW_BIN:-/home/linuxbrew/.linuxbrew/bin/openclaw}"
 OPENCLAW_HOME="${OPENCLAW_HOME:-/home/openclaw}"
-OPENCLAW_NPM_SPEC="${OPENCLAW_NPM_SPEC:-openclaw@latest}"
+OPENCLAW_STABLE_VERSION="${OPENCLAW_STABLE_VERSION:-2026.4.12}"
+OPENCLAW_NPM_SPEC="${OPENCLAW_NPM_SPEC:-openclaw@${OPENCLAW_STABLE_VERSION}}"
 OPENCLAW_NPM_PREFIX="${OPENCLAW_NPM_PREFIX:-/home/linuxbrew/.linuxbrew}"
 STATUS_TMP="$(mktemp)"
 trap 'rm -f "$STATUS_TMP"' EXIT
