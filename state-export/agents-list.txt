@@ -1,3 +1,11 @@
+│
+◇  Config warnings ────────────────────────────────────────────────────╮
+│                                                                      │
+│  - plugins.entries.agentmail: plugin agentmail: duplicate plugin id  │
+│    detected; global plugin will be overridden by global plugin       │
+│    (/home/openclaw/.openclaw/extensions/agentmail/index.ts)          │
+│                                                                      │
+├──────────────────────────────────────────────────────────────────────╯
 Agents:
 - main (default)
   Identity: 🧭 Main (IDENTITY.md)
