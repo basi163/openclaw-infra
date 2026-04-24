@@ -161,7 +161,7 @@
   "gateway": {
     "port": 18789,
     "mode": "local",
-    "bind": "lan",
+    "bind": "loopback",
     "controlUi": {
       "allowedOrigins": [
         "http://194.154.29.191:3040"
@@ -175,6 +175,10 @@
     "tailscale": {
       "mode": "off",
       "resetOnExit": false
+    },
+    "reload": {
+      "mode": "hot",
+      "debounceMs": 300
     }
   },
   "skills": {
