@@ -1,0 +1,46 @@
+[plugins] openai installed bundled runtime deps: @mariozechner/pi-ai@0.69.0
+Agents:
+- main (default)
+  Identity: 🧭 Main (IDENTITY.md)
+  Workspace: ~/.openclaw/workspace
+  Agent dir: ~/.openclaw/agents/main/agent
+  Model: deepseek/deepseek-chat
+  Routing rules: 1
+  Routing: Telegram main_bot
+  Providers:
+    - Telegram main_bot: configured
+- mobile-app-builder
+  Workspace: ~/.openclaw/agency-agents/mobile-app-builder
+  Agent dir: ~/.openclaw/agents/mobile-app-builder/agent
+  Model: deepseek/deepseek-chat
+  Routing rules: 0
+- flightwatch
+  Identity: ✈️ flightwatch (IDENTITY.md)
+  Workspace: ~/.openclaw/agency-agents/flightwatch
+  Agent dir: ~/.openclaw/agents/flightwatch/agent
+  Model: deepseek/deepseek-chat
+  Routing rules: 0
+- watercooler
+  Identity: 💧 Water Cooler (IDENTITY.md)
+  Workspace: ~/agents/watercooler
+  Agent dir: ~/.openclaw/agents/watercooler/agent
+  Model: openai-codex/gpt-5.3-codex
+  Routing rules: 0
+- developer
+  Identity: 🛠️ developer (IDENTITY.md)
+  Workspace: ~/.openclaw/agency-agents/developer
+  Agent dir: ~/.openclaw/agents/developer/agent
+  Model: openai-codex/gpt-5.3-codex
+  Routing rules: 0
+- sales_agent
+  Workspace: ~/.openclaw/workspace-sales_agent
+  Agent dir: ~/.openclaw/agents/sales_agent/agent
+  Model: deepseek/deepseek-chat
+  Routing rules: 0
+- marketing_agent
+  Workspace: ~/.openclaw/workspace-marketing_agent
+  Agent dir: ~/.openclaw/agents/marketing_agent/agent
+  Model: deepseek/deepseek-chat
+  Routing rules: 0
+Routing rules map channel/account/peer to an agent. Use --bindings for full rules.
+Channel status reflects local config/creds. For live health: openclaw channels status --probe.
