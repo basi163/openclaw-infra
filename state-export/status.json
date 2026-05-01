@@ -63,7 +63,7 @@
         "kind": "direct",
         "sessionId": "1c67c7b8-da09-4344-a6de-71dcd67da708",
         "updatedAt": 1777020927517,
-        "age": 590690156,
+        "age": 594285402,
         "systemSent": false,
         "abortedLastRun": false,
         "totalTokens": null,
@@ -89,7 +89,7 @@
             "kind": "direct",
             "sessionId": "1c67c7b8-da09-4344-a6de-71dcd67da708",
             "updatedAt": 1777020927517,
-            "age": 590690156,
+            "age": 594285402,
             "systemSent": false,
             "abortedLastRun": false,
             "totalTokens": null,
@@ -139,10 +139,15 @@
     "url": "ws://127.0.0.1:18789",
     "urlSource": "local loopback",
     "misconfigured": false,
-    "reachable": false,
-    "connectLatencyMs": null,
-    "self": null,
-    "error": "timeout",
+    "reachable": true,
+    "connectLatencyMs": 116,
+    "self": {
+      "host": "293926.fornex.cloud",
+      "ip": "194.154.29.191",
+      "version": "2026.4.12",
+      "platform": "linux 6.8.0-107-generic"
+    },
+    "error": null,
     "authWarning": null
   },
   "gatewayService": {
@@ -181,7 +186,7 @@
         "sessionsPath": "/root/.openclaw/agents/main/sessions/sessions.json",
         "sessionsCount": 1,
         "lastUpdatedAt": 1777020927517,
-        "lastActiveAgeMs": 590686520
+        "lastActiveAgeMs": 594284297
       }
     ],
     "totalSessions": 1,
