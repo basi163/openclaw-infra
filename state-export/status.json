@@ -63,7 +63,7 @@
         "kind": "direct",
         "sessionId": "1c67c7b8-da09-4344-a6de-71dcd67da708",
         "updatedAt": 1777020927517,
-        "age": 864286875,
+        "age": 867886316,
         "systemSent": false,
         "abortedLastRun": false,
         "totalTokens": null,
@@ -89,7 +89,7 @@
             "kind": "direct",
             "sessionId": "1c67c7b8-da09-4344-a6de-71dcd67da708",
             "updatedAt": 1777020927517,
-            "age": 864286875,
+            "age": 867886316,
             "systemSent": false,
             "abortedLastRun": false,
             "totalTokens": null,
@@ -124,7 +124,7 @@
       "reason": "lockfile missing"
     },
     "registry": {
-      "latestVersion": "2026.5.3"
+      "latestVersion": "2026.5.3-1"
     }
   },
   "updateChannel": "stable",
@@ -186,7 +186,7 @@
         "sessionsPath": "/root/.openclaw/agents/main/sessions/sessions.json",
         "sessionsCount": 1,
         "lastUpdatedAt": 1777020927517,
-        "lastActiveAgeMs": 864285739
+        "lastActiveAgeMs": 867885360
       }
     ],
     "totalSessions": 1,
