@@ -1,5 +1,5 @@
 {
-  "runtimeVersion": "2026.4.12",
+  "runtimeVersion": "2026.5.5",
   "heartbeat": {
     "defaultAgentId": "main",
     "agents": [
@@ -53,7 +53,7 @@
     ],
     "count": 1,
     "defaults": {
-      "model": "gpt-5.4",
+      "model": "gpt-5.5",
       "contextTokens": 200000
     },
     "recent": [
@@ -63,14 +63,15 @@
         "kind": "direct",
         "sessionId": "1c67c7b8-da09-4344-a6de-71dcd67da708",
         "updatedAt": 1777020927517,
-        "age": 1051487101,
+        "age": 1055084393,
         "systemSent": false,
         "abortedLastRun": false,
         "totalTokens": null,
         "totalTokensFresh": false,
         "remainingTokens": null,
         "percentUsed": null,
-        "model": "gpt-5.4",
+        "model": "gpt-5.5",
+        "runtime": "OpenClaw Pi Default",
         "contextTokens": 200000,
         "flags": [
           "id:1c67c7b8-da09-4344-a6de-71dcd67da708"
@@ -89,14 +90,15 @@
             "kind": "direct",
             "sessionId": "1c67c7b8-da09-4344-a6de-71dcd67da708",
             "updatedAt": 1777020927517,
-            "age": 1051487101,
+            "age": 1055084393,
             "systemSent": false,
             "abortedLastRun": false,
             "totalTokens": null,
             "totalTokensFresh": false,
             "remainingTokens": null,
             "percentUsed": null,
-            "model": "gpt-5.4",
+            "model": "gpt-5.5",
+            "runtime": "OpenClaw Pi Default",
             "contextTokens": 200000,
             "flags": [
               "id:1c67c7b8-da09-4344-a6de-71dcd67da708"
@@ -124,7 +126,8 @@
       "reason": "lockfile missing"
     },
     "registry": {
-      "latestVersion": "2026.5.5"
+      "latestVersion": "2026.5.5",
+      "tag": "latest"
     }
   },
   "updateChannel": "stable",
@@ -140,18 +143,18 @@
     "urlSource": "local loopback",
     "misconfigured": false,
     "reachable": true,
-    "connectLatencyMs": 88,
+    "connectLatencyMs": 85,
     "self": {
       "host": "293926.fornex.cloud",
       "ip": "194.154.29.191",
-      "version": "2026.4.12",
+      "version": "2026.5.5",
       "platform": "linux 6.8.0-107-generic"
     },
     "error": null,
     "authWarning": null
   },
   "gatewayService": {
-    "label": "systemd",
+    "label": "systemd user",
     "installed": false,
     "loaded": false,
     "managedByOpenClaw": false,
@@ -164,7 +167,7 @@
     "runtimeShort": "unknown (systemctl --user unavailable: Failed to connect to bus: No medium found)"
   },
   "nodeService": {
-    "label": "systemd",
+    "label": "systemd user",
     "installed": false,
     "loaded": false,
     "managedByOpenClaw": false,
@@ -186,7 +189,7 @@
         "sessionsPath": "/root/.openclaw/agents/main/sessions/sessions.json",
         "sessionsCount": 1,
         "lastUpdatedAt": 1777020927517,
-        "lastActiveAgeMs": 1051486041
+        "lastActiveAgeMs": 1055081876
       }
     ],
     "totalSessions": 1,
