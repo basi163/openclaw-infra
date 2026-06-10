@@ -1,5 +1,5 @@
 {
-  "runtimeVersion": "2026.5.5",
+  "runtimeVersion": "2026.6.5",
   "heartbeat": {
     "defaultAgentId": "main",
     "agents": [
@@ -63,7 +63,7 @@
         "kind": "direct",
         "sessionId": "1c67c7b8-da09-4344-a6de-71dcd67da708",
         "updatedAt": 1777020927517,
-        "age": 4068284503,
+        "age": 4075488605,
         "systemSent": false,
         "abortedLastRun": false,
         "totalTokens": null,
@@ -71,7 +71,10 @@
         "remainingTokens": null,
         "percentUsed": null,
         "model": "gpt-5.5",
-        "runtime": "OpenClaw Pi Default",
+        "configuredModel": "openai/gpt-5.5",
+        "selectedModel": "openai/gpt-5.5",
+        "modelSelectionReason": null,
+        "runtime": "OpenAI Codex",
         "contextTokens": 200000,
         "flags": [
           "id:1c67c7b8-da09-4344-a6de-71dcd67da708"
@@ -90,7 +93,7 @@
             "kind": "direct",
             "sessionId": "1c67c7b8-da09-4344-a6de-71dcd67da708",
             "updatedAt": 1777020927517,
-            "age": 4068284503,
+            "age": 4075488605,
             "systemSent": false,
             "abortedLastRun": false,
             "totalTokens": null,
@@ -98,7 +101,10 @@
             "remainingTokens": null,
             "percentUsed": null,
             "model": "gpt-5.5",
-            "runtime": "OpenClaw Pi Default",
+            "configuredModel": "openai/gpt-5.5",
+            "selectedModel": "openai/gpt-5.5",
+            "modelSelectionReason": null,
+            "runtime": "OpenAI Codex",
             "contextTokens": 200000,
             "flags": [
               "id:1c67c7b8-da09-4344-a6de-71dcd67da708"
@@ -117,17 +123,12 @@
   "update": {
     "root": "/home/linuxbrew/.linuxbrew/lib/node_modules/openclaw",
     "installKind": "package",
-    "packageManager": "pnpm",
+    "packageManager": "npm",
     "deps": {
-      "manager": "pnpm",
-      "status": "unknown",
-      "lockfilePath": "/home/linuxbrew/.linuxbrew/lib/node_modules/openclaw/pnpm-lock.yaml",
-      "markerPath": "/home/linuxbrew/.linuxbrew/lib/node_modules/openclaw/node_modules/.modules.yaml",
-      "reason": "lockfile missing"
-    },
-    "registry": {
-      "latestVersion": "2026.6.5",
-      "tag": "latest"
+      "manager": "npm",
+      "status": "ok",
+      "lockfilePath": "/home/linuxbrew/.linuxbrew/lib/node_modules/openclaw/npm-shrinkwrap.json",
+      "markerPath": "/home/linuxbrew/.linuxbrew/lib/node_modules/openclaw/node_modules"
     }
   },
   "updateChannel": "stable",
@@ -143,41 +144,62 @@
     "urlSource": "local loopback",
     "misconfigured": false,
     "reachable": true,
-    "connectLatencyMs": 80,
+    "connectLatencyMs": 88,
     "self": {
       "host": "293926.fornex.cloud",
       "ip": "194.154.29.191",
-      "version": "2026.5.5",
-      "platform": "linux 6.8.0-111-generic"
+      "version": "2026.6.5",
+      "platform": "linux 6.8.0-111-generic",
+      "instanceId": "56b258c9-d866-44ff-891f-cca14a1c4ec0"
     },
     "error": null,
     "authWarning": null
   },
   "gatewayService": {
     "label": "systemd user",
-    "installed": false,
-    "loaded": false,
+    "installed": true,
+    "loaded": true,
     "managedByOpenClaw": false,
-    "externallyManaged": false,
-    "loadedText": "disabled",
+    "externallyManaged": true,
+    "loadedText": "running (externally managed)",
     "runtime": {
-      "status": "unknown",
-      "detail": "systemctl --user unavailable: Failed to connect to bus: No medium found"
+      "status": "running",
+      "state": "active",
+      "subState": "running",
+      "pid": 1475605,
+      "lastExitStatus": 0,
+      "lastExitReason": "0",
+      "systemd": {
+        "unit": "openclaw-gateway.service",
+        "killMode": "control-group",
+        "tasksCurrent": 19,
+        "memoryCurrent": 586678272
+      }
     },
-    "runtimeShort": "unknown (systemctl --user unavailable: Failed to connect to bus: No medium found)"
+    "runtimeShort": "running (pid 1475605, state active)"
   },
   "nodeService": {
     "label": "systemd user",
-    "installed": false,
-    "loaded": false,
+    "installed": true,
+    "loaded": true,
     "managedByOpenClaw": false,
-    "externallyManaged": false,
-    "loadedText": "disabled",
+    "externallyManaged": true,
+    "loadedText": "running (externally managed)",
     "runtime": {
-      "status": "unknown",
-      "detail": "systemctl --user unavailable: Failed to connect to bus: No medium found"
+      "status": "running",
+      "state": "active",
+      "subState": "running",
+      "pid": 1475605,
+      "lastExitStatus": 0,
+      "lastExitReason": "0",
+      "systemd": {
+        "unit": "openclaw-gateway.service",
+        "killMode": "control-group",
+        "tasksCurrent": 19,
+        "memoryCurrent": 586678272
+      }
     },
-    "runtimeShort": "unknown (systemctl --user unavailable: Failed to connect to bus: No medium found)"
+    "runtimeShort": "running (pid 1475605, state active)"
   },
   "agents": {
     "defaultId": "main",
@@ -189,7 +211,7 @@
         "sessionsPath": "/root/.openclaw/agents/main/sessions/sessions.json",
         "sessionsCount": 1,
         "lastUpdatedAt": 1777020927517,
-        "lastActiveAgeMs": 4068282008
+        "lastActiveAgeMs": 4075488398
       }
     ],
     "totalSessions": 1,
