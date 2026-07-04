@@ -63,7 +63,7 @@
         "kind": "direct",
         "sessionId": "1c67c7b8-da09-4344-a6de-71dcd67da708",
         "updatedAt": 1777020927517,
-        "age": 6138291269,
+        "age": 6141890289,
         "systemSent": false,
         "abortedLastRun": false,
         "totalTokens": null,
@@ -93,7 +93,7 @@
             "kind": "direct",
             "sessionId": "1c67c7b8-da09-4344-a6de-71dcd67da708",
             "updatedAt": 1777020927517,
-            "age": 6138291269,
+            "age": 6141890289,
             "systemSent": false,
             "abortedLastRun": false,
             "totalTokens": null,
@@ -173,7 +173,7 @@
         "unit": "openclaw-gateway.service",
         "killMode": "control-group",
         "tasksCurrent": 19,
-        "memoryCurrent": 1657229312
+        "memoryCurrent": 1714708480
       }
     },
     "runtimeShort": "running (pid 1475605, state active)"
@@ -196,7 +196,7 @@
         "unit": "openclaw-gateway.service",
         "killMode": "control-group",
         "tasksCurrent": 19,
-        "memoryCurrent": 1657225216
+        "memoryCurrent": 1714708480
       }
     },
     "runtimeShort": "running (pid 1475605, state active)"
@@ -211,7 +211,7 @@
         "sessionsPath": "/root/.openclaw/agents/main/sessions/sessions.json",
         "sessionsCount": 1,
         "lastUpdatedAt": 1777020927517,
-        "lastActiveAgeMs": 6138291013
+        "lastActiveAgeMs": 6141890058
       }
     ],
     "totalSessions": 1,
