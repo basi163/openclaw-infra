@@ -63,7 +63,7 @@
         "kind": "direct",
         "sessionId": "1c67c7b8-da09-4344-a6de-71dcd67da708",
         "updatedAt": 1777020927517,
-        "age": 7657490866,
+        "age": 7671889215,
         "systemSent": false,
         "abortedLastRun": false,
         "totalTokens": null,
@@ -93,7 +93,7 @@
             "kind": "direct",
             "sessionId": "1c67c7b8-da09-4344-a6de-71dcd67da708",
             "updatedAt": 1777020927517,
-            "age": 7657490866,
+            "age": 7671889215,
             "systemSent": false,
             "abortedLastRun": false,
             "totalTokens": null,
@@ -144,7 +144,7 @@
     "urlSource": "local loopback",
     "misconfigured": false,
     "reachable": true,
-    "connectLatencyMs": 123,
+    "connectLatencyMs": 89,
     "self": {
       "host": "293926.fornex.cloud",
       "ip": "194.154.29.191",
@@ -172,8 +172,8 @@
       "systemd": {
         "unit": "openclaw-gateway.service",
         "killMode": "control-group",
-        "tasksCurrent": 18,
-        "memoryCurrent": 1052069888
+        "tasksCurrent": 19,
+        "memoryCurrent": 1224990720
       }
     },
     "runtimeShort": "running (pid 687, state active)"
@@ -195,8 +195,8 @@
       "systemd": {
         "unit": "openclaw-gateway.service",
         "killMode": "control-group",
-        "tasksCurrent": 18,
-        "memoryCurrent": 1052069888
+        "tasksCurrent": 19,
+        "memoryCurrent": 1224990720
       }
     },
     "runtimeShort": "running (pid 687, state active)"
@@ -211,7 +211,7 @@
         "sessionsPath": "/root/.openclaw/agents/main/sessions/sessions.json",
         "sessionsCount": 1,
         "lastUpdatedAt": 1777020927517,
-        "lastActiveAgeMs": 7657490616
+        "lastActiveAgeMs": 7671889003
       }
     ],
     "totalSessions": 1,
